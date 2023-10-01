@@ -51,8 +51,10 @@
 		84893E552AC99C8C002DF1CB /* HapticTronome */ = {
 			isa = PBXGroup;
 			children = (
-				84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */,
-				84893E582AC99C8C002DF1CB /* ContentView.swift */,
+				84893E672AC99E7D002DF1CB /* Core */,
+				84893E662AC99E5D002DF1CB /* Domain */,
+				84893E652AC99E58002DF1CB /* Data */,
+				84893E642AC99E4F002DF1CB /* Presentation */,
 				84893E5A2AC99C8D002DF1CB /* Assets.xcassets */,
 				84893E5C2AC99C8D002DF1CB /* Preview Content */,
 			);
@@ -65,6 +67,76 @@
 				84893E5D2AC99C8D002DF1CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84893E642AC99E4F002DF1CB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */,
+				84893E582AC99C8C002DF1CB /* ContentView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		84893E652AC99E58002DF1CB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84893E6C2AC99EAB002DF1CB /* DataSource */,
+				84893E6B2AC99EA6002DF1CB /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		84893E662AC99E5D002DF1CB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				84893E6A2AC99E90002DF1CB /* UseCase */,
+				84893E692AC99E8B002DF1CB /* Repository */,
+				84893E682AC99E86002DF1CB /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		84893E672AC99E7D002DF1CB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		84893E682AC99E86002DF1CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84893E692AC99E8B002DF1CB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		84893E6A2AC99E90002DF1CB /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		84893E6B2AC99EA6002DF1CB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		84893E6C2AC99EAB002DF1CB /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
