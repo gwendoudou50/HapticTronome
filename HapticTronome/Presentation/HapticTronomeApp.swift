@@ -11,7 +11,8 @@ import SwiftUI
 struct HapticTronomeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomePage()
         }
     }
 }
+
