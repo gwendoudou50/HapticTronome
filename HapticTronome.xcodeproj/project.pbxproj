@@ -13,6 +13,10 @@
 		84893E5E2AC99C8D002DF1CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84893E5D2AC99C8D002DF1CB /* Preview Assets.xcassets */; };
 		84893E712AC9A501002DF1CB /* HomePageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84893E702AC9A501002DF1CB /* HomePageBody.swift */; };
 		84893E732AC9B17F002DF1CB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 84893E722AC9B17F002DF1CB /* Localizable.xcstrings */; };
+		96249BC32AD5D678009493BF /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96249BC22AD5D678009493BF /* constants.swift */; };
+		96877C182AD80D3C00D6529F /* Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96877C172AD80D3C00D6529F /* Glow.swift */; };
+		96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */; };
+		96C7E0F12AD569AD0069CFA8 /* PlayButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7E0F02AD569AD0069CFA8 /* PlayButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		84893E5D2AC99C8D002DF1CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84893E702AC9A501002DF1CB /* HomePageBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageBody.swift; sourceTree = "<group>"; };
 		84893E722AC9B17F002DF1CB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		96249BC22AD5D678009493BF /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		96877C172AD80D3C00D6529F /* Glow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glow.swift; sourceTree = "<group>"; };
+		96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWidget.swift; sourceTree = "<group>"; };
+		96C7E0F02AD569AD0069CFA8 /* PlayButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +84,10 @@
 		84893E642AC99E4F002DF1CB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				96877C162AD80D2100D6529F /* Extensions */,
 				84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */,
+				96C7E0EF2AD5699F0069CFA8 /* Styles */,
+				96C7E0EC2AD567DA0069CFA8 /* Widgets */,
 				84893E6D2AC9A476002DF1CB /* Pages */,
 			);
 			path = Presentation;
@@ -105,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				84893E722AC9B17F002DF1CB /* Localizable.xcstrings */,
+				96249BC22AD5D678009493BF /* constants.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -167,6 +179,38 @@
 				84893E702AC9A501002DF1CB /* HomePageBody.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		966E1D9B2AD67CE500821A24 /* PlayButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				96C7E0F02AD569AD0069CFA8 /* PlayButtonStyle.swift */,
+			);
+			path = PlayButtonStyles;
+			sourceTree = "<group>";
+		};
+		96877C162AD80D2100D6529F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				96877C172AD80D3C00D6529F /* Glow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96C7E0EC2AD567DA0069CFA8 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		96C7E0EF2AD5699F0069CFA8 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				966E1D9B2AD67CE500821A24 /* PlayButtonStyles */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84893E592AC99C8C002DF1CB /* HomePage.swift in Sources */,
+				96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */,
 				84893E712AC9A501002DF1CB /* HomePageBody.swift in Sources */,
+				96C7E0F12AD569AD0069CFA8 /* PlayButtonStyle.swift in Sources */,
 				84893E572AC99C8C002DF1CB /* HapticTronomeApp.swift in Sources */,
+				96877C182AD80D3C00D6529F /* Glow.swift in Sources */,
+				96249BC32AD5D678009493BF /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

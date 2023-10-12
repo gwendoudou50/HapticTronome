@@ -10,7 +10,7 @@ import SwiftUI
 struct HomePageBody: View {
     var body: some View {
             VStack {
-                Text("Hello, World!")
+                ButtonWidget()
             }
         }
 }

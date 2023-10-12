@@ -10,18 +10,19 @@ import SwiftUI
 struct HomePage: View {
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color(.white))]
-        }
-        
-        var body: some View {
-            NavigationView {
-                ZStack {
-                    Color(.background).edgesIgnoringSafeArea(.all)
-                    HomePageBody()
-                        .navigationTitle("HapticTronomeTitle")
-                        .padding()
-                }
+    }
+    
+    var body: some View {
+        NavigationView {
+            ZStack {
+                Color(.background).edgesIgnoringSafeArea(.all)
+                
+                HomePageBody()
+                    .navigationTitle("HapticTronomeTitle")
+                    .padding()
             }
         }
+    }
 }
 
 #Preview {
