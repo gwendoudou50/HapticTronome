@@ -9,5 +9,5 @@ import Foundation
 import SwiftUI
 
 struct AppConstants {
-    let playButtonGradient = Gradient(colors: [Color("ButtonGradientLight"), Color("ButtonGradientDark")])
+    let playButtonGradient = Gradient(colors: [Color.appButtonGradientLight, Color.appButtonGradientDark])
 }

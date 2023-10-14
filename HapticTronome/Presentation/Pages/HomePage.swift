@@ -9,13 +9,13 @@ import SwiftUI
 
 struct HomePage: View {
     init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color(.white))]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color.appWhite)]
     }
     
     var body: some View {
         NavigationView {
             ZStack {
-                Color(.background).edgesIgnoringSafeArea(.all)
+                Color.appBackground.edgesIgnoringSafeArea(.all)
                 
                 HomePageBody()
                     .navigationTitle("HapticTronomeTitle")
