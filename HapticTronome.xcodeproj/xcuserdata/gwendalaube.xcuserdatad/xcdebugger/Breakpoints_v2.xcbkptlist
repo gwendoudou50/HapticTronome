@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2C14FC5D-A338-4A1A-8A1E-76B52568356C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC629067-45BB-486D-AD2A-81E39DB3C206"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HapticTronome/Domain/AudioManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "startPlayer(track:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FC629067-45BB-486D-AD2A-81E39DB3C206 - 7291351d15dda9a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HapticTronome.AudioManager.startPlayer(track: Swift.String) -&gt; ()"
+                  moduleName = "HapticTronome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Domain/AudioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "1692">
+               </Location>
+               <Location
+                  uuid = "FC629067-45BB-486D-AD2A-81E39DB3C206 - 7291351d15dda9a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HapticTronome.AudioManager.startPlayer(track: Swift.String) -&gt; ()"
+                  moduleName = "HapticTronome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Domain/AudioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "1652">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "248FC06C-433A-4767-B0BE-A452203C9DA2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HapticTronome/Domain/AudioManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "startPlayer(track:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -17,39 +17,39 @@ struct PlayButtonStyle: ButtonStyle {
                 .font(.body)
                 .padding(.horizontal, 26)
                 .padding(.vertical, 16)
-                .foregroundColor(Color("PrimaryColor"))
+                .foregroundColor(Color.appPrimary)
                 .background(
                     ZStack {
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
                             .fill(AppConstants().playButtonGradient)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
-                                    .stroke(Color("Black"), lineWidth: 4)
-                                    .shadow(color: Color("White").opacity(0.14), radius: 1, x: 0, y: 1)
+                                    .stroke(Color.appBlack, lineWidth: 4)
+                                    .shadow(color: Color.appBlack.opacity(0.14), radius: 1, x: 0, y: 1)
                                     .clipShape(RoundedRectangle(cornerRadius: 12))
                             )
                     }
                 )
-                .shadow(color: Color("Black").opacity(0.24), radius: 8, x: 0, y: 6)
-                .shadow(color: Color("White").opacity(0.14), radius: 1, x: 0, y: -1)
+                .shadow(color: Color.appBlack.opacity(0.24), radius: 8, x: 0, y: 6)
+                .shadow(color: Color.appWhite.opacity(0.14), radius: 1, x: 0, y: -1)
         } else {
             configuration.label
                 .font(.body)
                 .padding(.horizontal, 26)
                 .padding(.vertical, 16)
-                .foregroundColor(Color("White"))
-                .glow(color: Color("White"), radius: 15)
+                .foregroundColor(Color.appWhite)
+                .glow(color: Color.appWhite, radius: 20)
                 .background(
                     ZStack {
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(Color("Grey"))
+                            .fill(Color.appGrey)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
-                                    .stroke(Color("Black"), lineWidth: 4)
-                                    .shadow(color: Color("Black").opacity(0.40), radius: 1, x: 0, y: -1)
+                                    .stroke(Color.appBlack, lineWidth: 4)
+                                    .shadow(color: Color.appBlack.opacity(0.40), radius: 1, x: 0, y: -1)
                                     .clipShape(RoundedRectangle(cornerRadius: 12))
                             )
-                            .shadow(color: Color("White").opacity(0.14), radius: 1, x: 0, y: -1)
+                            .shadow(color: Color.appWhite.opacity(0.14), radius: 1, x: 0, y: -1)
                     }
                 )
                 
