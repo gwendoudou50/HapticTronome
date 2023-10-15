@@ -15,14 +15,11 @@ struct ButtonWidget: View {
     
     var body: some View {
         Button(action: {
-            
-                isPlaying.toggle()
-            
-            print(isPlaying)
+            isPlaying.toggle()
         }) {
             Image(systemName: "play.fill")
         }
-            .buttonStyle(PlayButtonStyle(isPressed: isPlaying))
+        .buttonStyle(PlayButtonStyle(isPressed: isPlaying))
     }
 }
 

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840D3CAF2ADACF8200166FA6 /* BpmEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CAE2ADACF8200166FA6 /* BpmEntity.swift */; };
+		840D3CB12ADACFE000166FA6 /* BpmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB02ADACFE000166FA6 /* BpmRepository.swift */; };
+		840D3CB32ADAD05000166FA6 /* FetchBpmUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB22ADAD05000166FA6 /* FetchBpmUseCase.swift */; };
+		840D3CB52ADAD14700166FA6 /* BpmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB42ADAD14700166FA6 /* BpmDataSource.swift */; };
+		840D3CB72ADAD19700166FA6 /* BpmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB62ADAD19700166FA6 /* BpmModel.swift */; };
+		840D3CB92ADAD1EE00166FA6 /* BpmRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB82ADAD1EE00166FA6 /* BpmRepositoryImpl.swift */; };
+		840D3CBD2ADAD28A00166FA6 /* BpmMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CBC2ADAD28A00166FA6 /* BpmMapper.swift */; };
+		840D3CC12ADAD4C000166FA6 /* BpmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CC02ADAD4C000166FA6 /* BpmViewModel.swift */; };
+		840D3CC32ADAD54400166FA6 /* BpmText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CC22ADAD54400166FA6 /* BpmText.swift */; };
 		84893E572AC99C8C002DF1CB /* HapticTronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */; };
 		84893E592AC99C8C002DF1CB /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84893E582AC99C8C002DF1CB /* HomePage.swift */; };
 		84893E5B2AC99C8D002DF1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84893E5A2AC99C8D002DF1CB /* Assets.xcassets */; };
@@ -20,6 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840D3CAE2ADACF8200166FA6 /* BpmEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmEntity.swift; sourceTree = SOURCE_ROOT; };
+		840D3CB02ADACFE000166FA6 /* BpmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmRepository.swift; sourceTree = SOURCE_ROOT; };
+		840D3CB22ADAD05000166FA6 /* FetchBpmUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBpmUseCase.swift; sourceTree = SOURCE_ROOT; };
+		840D3CB42ADAD14700166FA6 /* BpmDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmDataSource.swift; sourceTree = SOURCE_ROOT; };
+		840D3CB62ADAD19700166FA6 /* BpmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmModel.swift; sourceTree = "<group>"; };
+		840D3CB82ADAD1EE00166FA6 /* BpmRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BpmRepositoryImpl.swift; path = HapticTronome/Data/Models/BpmRepositoryImpl.swift; sourceTree = SOURCE_ROOT; };
+		840D3CBC2ADAD28A00166FA6 /* BpmMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmMapper.swift; sourceTree = "<group>"; };
+		840D3CC02ADAD4C000166FA6 /* BpmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmViewModel.swift; sourceTree = "<group>"; };
+		840D3CC22ADAD54400166FA6 /* BpmText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmText.swift; sourceTree = "<group>"; };
 		84893E532AC99C8C002DF1CB /* HapticTronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticTronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTronomeApp.swift; sourceTree = "<group>"; };
 		84893E582AC99C8C002DF1CB /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
@@ -44,6 +62,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840D3CAD2ADACF3700166FA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				840D3CB62ADAD19700166FA6 /* BpmModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		840D3CBA2ADAD27900166FA6 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				840D3CBC2ADAD28A00166FA6 /* BpmMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		840D3CBE2ADAD4AB00166FA6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				840D3CC02ADAD4C000166FA6 /* BpmViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		84893E4A2AC99C8C002DF1CB = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +126,9 @@
 		84893E642AC99E4F002DF1CB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				96877C162AD80D2100D6529F /* Extensions */,
 				84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */,
+				840D3CBE2ADAD4AB00166FA6 /* ViewModels */,
+				96877C162AD80D2100D6529F /* Extensions */,
 				96C7E0EF2AD5699F0069CFA8 /* Styles */,
 				96C7E0EC2AD567DA0069CFA8 /* Widgets */,
 				84893E6D2AC9A476002DF1CB /* Pages */,
@@ -96,8 +139,10 @@
 		84893E652AC99E58002DF1CB /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				840D3CBA2ADAD27900166FA6 /* Mappers */,
+				840D3CAD2ADACF3700166FA6 /* Models */,
 				84893E6C2AC99EAB002DF1CB /* DataSource */,
-				84893E6B2AC99EA6002DF1CB /* Repository */,
+				84893E6B2AC99EA6002DF1CB /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -105,9 +150,9 @@
 		84893E662AC99E5D002DF1CB /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				84893E6A2AC99E90002DF1CB /* UseCase */,
-				84893E692AC99E8B002DF1CB /* Repository */,
-				84893E682AC99E86002DF1CB /* Model */,
+				84893E6A2AC99E90002DF1CB /* UseCases */,
+				84893E692AC99E8B002DF1CB /* Repositories */,
+				84893E682AC99E86002DF1CB /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -121,37 +166,42 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		84893E682AC99E86002DF1CB /* Model */ = {
+		84893E682AC99E86002DF1CB /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				840D3CAE2ADACF8200166FA6 /* BpmEntity.swift */,
 			);
-			path = Model;
+			path = Entities;
 			sourceTree = "<group>";
 		};
-		84893E692AC99E8B002DF1CB /* Repository */ = {
+		84893E692AC99E8B002DF1CB /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				840D3CB02ADACFE000166FA6 /* BpmRepository.swift */,
 			);
-			path = Repository;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
-		84893E6A2AC99E90002DF1CB /* UseCase */ = {
+		84893E6A2AC99E90002DF1CB /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				840D3CB22ADAD05000166FA6 /* FetchBpmUseCase.swift */,
 			);
-			path = UseCase;
+			path = UseCases;
 			sourceTree = "<group>";
 		};
-		84893E6B2AC99EA6002DF1CB /* Repository */ = {
+		84893E6B2AC99EA6002DF1CB /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				840D3CB82ADAD1EE00166FA6 /* BpmRepositoryImpl.swift */,
 			);
-			path = Repository;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		84893E6C2AC99EAB002DF1CB /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				840D3CB42ADAD14700166FA6 /* BpmDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -201,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */,
+				840D3CC22ADAD54400166FA6 /* BpmText.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -285,12 +336,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840D3CBD2ADAD28A00166FA6 /* BpmMapper.swift in Sources */,
+				840D3CB32ADAD05000166FA6 /* FetchBpmUseCase.swift in Sources */,
 				84893E592AC99C8C002DF1CB /* HomePage.swift in Sources */,
+				840D3CB92ADAD1EE00166FA6 /* BpmRepositoryImpl.swift in Sources */,
 				96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */,
 				84893E712AC9A501002DF1CB /* HomePageBody.swift in Sources */,
+				840D3CB52ADAD14700166FA6 /* BpmDataSource.swift in Sources */,
+				840D3CB72ADAD19700166FA6 /* BpmModel.swift in Sources */,
+				840D3CAF2ADACF8200166FA6 /* BpmEntity.swift in Sources */,
 				96C7E0F12AD569AD0069CFA8 /* PlayButtonStyle.swift in Sources */,
 				84893E572AC99C8C002DF1CB /* HapticTronomeApp.swift in Sources */,
 				96877C182AD80D3C00D6529F /* Glow.swift in Sources */,
+				840D3CC32ADAD54400166FA6 /* BpmText.swift in Sources */,
+				840D3CB12ADACFE000166FA6 /* BpmRepository.swift in Sources */,
+				840D3CC12ADAD4C000166FA6 /* BpmViewModel.swift in Sources */,
 				96249BC32AD5D678009493BF /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

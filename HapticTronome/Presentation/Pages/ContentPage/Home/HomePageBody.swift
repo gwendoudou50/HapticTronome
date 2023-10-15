@@ -9,10 +9,15 @@ import SwiftUI
 
 struct HomePageBody: View {
     var body: some View {
-            VStack {
-                ButtonWidget()
-            }
+        
+        let bpmEntity = BpmEntity.previewMovie
+        
+        
+        VStack(spacing: 80) {
+            BpmText(bpm: bpmEntity.bpm, isPlaying: false)
+            ButtonWidget()
         }
+    }
 }
 
 #Preview {
