@@ -1,6 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld BPM" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld BPM"
+          }
+        }
+      }
+    },
     "HapticTronomeTitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -17,9 +27,6 @@
           }
         }
       }
-    },
-    "Hello, World!" : {
-
     }
   },
   "version" : "1.0"
