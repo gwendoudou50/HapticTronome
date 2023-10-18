@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		840D3CAF2ADACF8200166FA6 /* BpmEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CAE2ADACF8200166FA6 /* BpmEntity.swift */; };
 		840D3CB12ADACFE000166FA6 /* BpmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB02ADACFE000166FA6 /* BpmRepository.swift */; };
-		840D3CB32ADAD05000166FA6 /* FetchBpmUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB22ADAD05000166FA6 /* FetchBpmUseCase.swift */; };
-		840D3CB52ADAD14700166FA6 /* BpmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB42ADAD14700166FA6 /* BpmDataSource.swift */; };
 		840D3CB72ADAD19700166FA6 /* BpmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB62ADAD19700166FA6 /* BpmModel.swift */; };
-		840D3CB92ADAD1EE00166FA6 /* BpmRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CB82ADAD1EE00166FA6 /* BpmRepositoryImpl.swift */; };
 		840D3CBD2ADAD28A00166FA6 /* BpmMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CBC2ADAD28A00166FA6 /* BpmMapper.swift */; };
 		840D3CC12ADAD4C000166FA6 /* BpmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CC02ADAD4C000166FA6 /* BpmViewModel.swift */; };
 		840D3CC32ADAD54400166FA6 /* BpmText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CC22ADAD54400166FA6 /* BpmText.swift */; };
@@ -22,6 +19,19 @@
 		84893E5E2AC99C8D002DF1CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84893E5D2AC99C8D002DF1CB /* Preview Assets.xcassets */; };
 		84893E712AC9A501002DF1CB /* HomePageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84893E702AC9A501002DF1CB /* HomePageBody.swift */; };
 		84893E732AC9B17F002DF1CB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 84893E722AC9B17F002DF1CB /* Localizable.xcstrings */; };
+		84A2BAA22ADBE71C00A22EC6 /* FetchBpmUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAA12ADBE71C00A22EC6 /* FetchBpmUseCase.swift */; };
+		84A2BAA42ADBE74A00A22EC6 /* TimeSignatureEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAA32ADBE74A00A22EC6 /* TimeSignatureEntity.swift */; };
+		84A2BAA62ADBE79300A22EC6 /* TimeSignatureRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAA52ADBE79300A22EC6 /* TimeSignatureRepository.swift */; };
+		84A2BAA82ADBE7BA00A22EC6 /* FetchTimeSignatureUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAA72ADBE7BA00A22EC6 /* FetchTimeSignatureUseCase.swift */; };
+		84A2BAAC2ADBE84100A22EC6 /* BpmRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAAB2ADBE84100A22EC6 /* BpmRepositoryImpl.swift */; };
+		84A2BAAE2ADBE86900A22EC6 /* BpmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAAD2ADBE86900A22EC6 /* BpmDataSource.swift */; };
+		84A2BAB02ADBE8C300A22EC6 /* TimeSignatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAAF2ADBE8C300A22EC6 /* TimeSignatureModel.swift */; };
+		84A2BAB22ADBE8EF00A22EC6 /* TimeSignatureDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAB12ADBE8EF00A22EC6 /* TimeSignatureDataSource.swift */; };
+		84A2BAB42ADBE91800A22EC6 /* TimeSignatureRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAB32ADBE91800A22EC6 /* TimeSignatureRepositoryImpl.swift */; };
+		84A2BAB62ADBE96D00A22EC6 /* TimeSignatureMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAB52ADBE96D00A22EC6 /* TimeSignatureMapper.swift */; };
+		84A2BAB82ADBE9E900A22EC6 /* TimeSignatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BAB72ADBE9E900A22EC6 /* TimeSignatureViewModel.swift */; };
+		84A2BABB2ADBEA6200A22EC6 /* LedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BABA2ADBEA6200A22EC6 /* LedWidget.swift */; };
+		84A2BABD2ADBED9D00A22EC6 /* LedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BABC2ADBED9D00A22EC6 /* LedRow.swift */; };
 		96249BC32AD5D678009493BF /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96249BC22AD5D678009493BF /* constants.swift */; };
 		96877C182AD80D3C00D6529F /* Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96877C172AD80D3C00D6529F /* Glow.swift */; };
 		96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */; };
@@ -29,12 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		840D3CAE2ADACF8200166FA6 /* BpmEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmEntity.swift; sourceTree = SOURCE_ROOT; };
-		840D3CB02ADACFE000166FA6 /* BpmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmRepository.swift; sourceTree = SOURCE_ROOT; };
-		840D3CB22ADAD05000166FA6 /* FetchBpmUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBpmUseCase.swift; sourceTree = SOURCE_ROOT; };
-		840D3CB42ADAD14700166FA6 /* BpmDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmDataSource.swift; sourceTree = SOURCE_ROOT; };
+		840D3CAE2ADACF8200166FA6 /* BpmEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BpmEntity.swift; path = HapticTronome/Domain/Entities/BpmEntity.swift; sourceTree = SOURCE_ROOT; };
+		840D3CB02ADACFE000166FA6 /* BpmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BpmRepository.swift; path = HapticTronome/Domain/Repositories/BpmRepository.swift; sourceTree = SOURCE_ROOT; };
 		840D3CB62ADAD19700166FA6 /* BpmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmModel.swift; sourceTree = "<group>"; };
-		840D3CB82ADAD1EE00166FA6 /* BpmRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BpmRepositoryImpl.swift; path = HapticTronome/Data/Models/BpmRepositoryImpl.swift; sourceTree = SOURCE_ROOT; };
 		840D3CBC2ADAD28A00166FA6 /* BpmMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmMapper.swift; sourceTree = "<group>"; };
 		840D3CC02ADAD4C000166FA6 /* BpmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmViewModel.swift; sourceTree = "<group>"; };
 		840D3CC22ADAD54400166FA6 /* BpmText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmText.swift; sourceTree = "<group>"; };
@@ -45,6 +52,19 @@
 		84893E5D2AC99C8D002DF1CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84893E702AC9A501002DF1CB /* HomePageBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageBody.swift; sourceTree = "<group>"; };
 		84893E722AC9B17F002DF1CB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		84A2BAA12ADBE71C00A22EC6 /* FetchBpmUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBpmUseCase.swift; sourceTree = "<group>"; };
+		84A2BAA32ADBE74A00A22EC6 /* TimeSignatureEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignatureEntity.swift; sourceTree = "<group>"; };
+		84A2BAA52ADBE79300A22EC6 /* TimeSignatureRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignatureRepository.swift; sourceTree = "<group>"; };
+		84A2BAA72ADBE7BA00A22EC6 /* FetchTimeSignatureUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTimeSignatureUseCase.swift; sourceTree = "<group>"; };
+		84A2BAAB2ADBE84100A22EC6 /* BpmRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmRepositoryImpl.swift; sourceTree = "<group>"; };
+		84A2BAAD2ADBE86900A22EC6 /* BpmDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmDataSource.swift; sourceTree = "<group>"; };
+		84A2BAAF2ADBE8C300A22EC6 /* TimeSignatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignatureModel.swift; sourceTree = "<group>"; };
+		84A2BAB12ADBE8EF00A22EC6 /* TimeSignatureDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignatureDataSource.swift; sourceTree = "<group>"; };
+		84A2BAB32ADBE91800A22EC6 /* TimeSignatureRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignatureRepositoryImpl.swift; sourceTree = "<group>"; };
+		84A2BAB52ADBE96D00A22EC6 /* TimeSignatureMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignatureMapper.swift; sourceTree = "<group>"; };
+		84A2BAB72ADBE9E900A22EC6 /* TimeSignatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignatureViewModel.swift; sourceTree = "<group>"; };
+		84A2BABA2ADBEA6200A22EC6 /* LedWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedWidget.swift; sourceTree = "<group>"; };
+		84A2BABC2ADBED9D00A22EC6 /* LedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedRow.swift; sourceTree = "<group>"; };
 		96249BC22AD5D678009493BF /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		96877C172AD80D3C00D6529F /* Glow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glow.swift; sourceTree = "<group>"; };
 		96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWidget.swift; sourceTree = "<group>"; };
@@ -66,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				840D3CB62ADAD19700166FA6 /* BpmModel.swift */,
+				84A2BAAF2ADBE8C300A22EC6 /* TimeSignatureModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -74,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				840D3CBC2ADAD28A00166FA6 /* BpmMapper.swift */,
+				84A2BAB52ADBE96D00A22EC6 /* TimeSignatureMapper.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -82,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				840D3CC02ADAD4C000166FA6 /* BpmViewModel.swift */,
+				84A2BAB72ADBE9E900A22EC6 /* TimeSignatureViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -106,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				84893E672AC99E7D002DF1CB /* Core */,
-				84893E662AC99E5D002DF1CB /* Domain */,
 				84893E652AC99E58002DF1CB /* Data */,
+				84A2BA9D2ADBE68D00A22EC6 /* Domain */,
 				84893E642AC99E4F002DF1CB /* Presentation */,
 				84893E5A2AC99C8D002DF1CB /* Assets.xcassets */,
 				84893E5C2AC99C8D002DF1CB /* Preview Content */,
@@ -139,22 +162,12 @@
 		84893E652AC99E58002DF1CB /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				84A2BAAA2ADBE81300A22EC6 /* Repositories */,
+				84A2BAA92ADBE7FD00A22EC6 /* DataSource */,
 				840D3CBA2ADAD27900166FA6 /* Mappers */,
 				840D3CAD2ADACF3700166FA6 /* Models */,
-				84893E6C2AC99EAB002DF1CB /* DataSource */,
-				84893E6B2AC99EA6002DF1CB /* Repositories */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		84893E662AC99E5D002DF1CB /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				84893E6A2AC99E90002DF1CB /* UseCases */,
-				84893E692AC99E8B002DF1CB /* Repositories */,
-				84893E682AC99E86002DF1CB /* Entities */,
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		84893E672AC99E7D002DF1CB /* Core */ = {
@@ -164,46 +177,6 @@
 				96249BC22AD5D678009493BF /* constants.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		84893E682AC99E86002DF1CB /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				840D3CAE2ADACF8200166FA6 /* BpmEntity.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		84893E692AC99E8B002DF1CB /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				840D3CB02ADACFE000166FA6 /* BpmRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		84893E6A2AC99E90002DF1CB /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				840D3CB22ADAD05000166FA6 /* FetchBpmUseCase.swift */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		84893E6B2AC99EA6002DF1CB /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				840D3CB82ADAD1EE00166FA6 /* BpmRepositoryImpl.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		84893E6C2AC99EAB002DF1CB /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				840D3CB42ADAD14700166FA6 /* BpmDataSource.swift */,
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 		84893E6D2AC9A476002DF1CB /* Pages */ = {
@@ -231,6 +204,70 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		84A2BA9D2ADBE68D00A22EC6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				84A2BAA02ADBE6AA00A22EC6 /* Repositories */,
+				84A2BA9F2ADBE6A400A22EC6 /* UseCases */,
+				84A2BA9E2ADBE69400A22EC6 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		84A2BA9E2ADBE69400A22EC6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				840D3CAE2ADACF8200166FA6 /* BpmEntity.swift */,
+				84A2BAA32ADBE74A00A22EC6 /* TimeSignatureEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		84A2BA9F2ADBE6A400A22EC6 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				84A2BAA12ADBE71C00A22EC6 /* FetchBpmUseCase.swift */,
+				84A2BAA72ADBE7BA00A22EC6 /* FetchTimeSignatureUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		84A2BAA02ADBE6AA00A22EC6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				840D3CB02ADACFE000166FA6 /* BpmRepository.swift */,
+				84A2BAA52ADBE79300A22EC6 /* TimeSignatureRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		84A2BAA92ADBE7FD00A22EC6 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				84A2BAAD2ADBE86900A22EC6 /* BpmDataSource.swift */,
+				84A2BAB12ADBE8EF00A22EC6 /* TimeSignatureDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		84A2BAAA2ADBE81300A22EC6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				84A2BAAB2ADBE84100A22EC6 /* BpmRepositoryImpl.swift */,
+				84A2BAB32ADBE91800A22EC6 /* TimeSignatureRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		84A2BAB92ADBEA5000A22EC6 /* LED */ = {
+			isa = PBXGroup;
+			children = (
+				84A2BABA2ADBEA6200A22EC6 /* LedWidget.swift */,
+				84A2BABC2ADBED9D00A22EC6 /* LedRow.swift */,
+			);
+			path = LED;
+			sourceTree = "<group>";
+		};
 		966E1D9B2AD67CE500821A24 /* PlayButtonStyles */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +287,7 @@
 		96C7E0EC2AD567DA0069CFA8 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				84A2BAB92ADBEA5000A22EC6 /* LED */,
 				96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */,
 				840D3CC22ADAD54400166FA6 /* BpmText.swift */,
 			);
@@ -337,20 +375,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				840D3CBD2ADAD28A00166FA6 /* BpmMapper.swift in Sources */,
-				840D3CB32ADAD05000166FA6 /* FetchBpmUseCase.swift in Sources */,
+				84A2BAA22ADBE71C00A22EC6 /* FetchBpmUseCase.swift in Sources */,
+				84A2BAA42ADBE74A00A22EC6 /* TimeSignatureEntity.swift in Sources */,
+				84A2BAB42ADBE91800A22EC6 /* TimeSignatureRepositoryImpl.swift in Sources */,
+				84A2BABD2ADBED9D00A22EC6 /* LedRow.swift in Sources */,
 				84893E592AC99C8C002DF1CB /* HomePage.swift in Sources */,
-				840D3CB92ADAD1EE00166FA6 /* BpmRepositoryImpl.swift in Sources */,
+				84A2BAAE2ADBE86900A22EC6 /* BpmDataSource.swift in Sources */,
+				84A2BAB02ADBE8C300A22EC6 /* TimeSignatureModel.swift in Sources */,
+				84A2BABB2ADBEA6200A22EC6 /* LedWidget.swift in Sources */,
+				84A2BAA62ADBE79300A22EC6 /* TimeSignatureRepository.swift in Sources */,
 				96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */,
 				84893E712AC9A501002DF1CB /* HomePageBody.swift in Sources */,
-				840D3CB52ADAD14700166FA6 /* BpmDataSource.swift in Sources */,
 				840D3CB72ADAD19700166FA6 /* BpmModel.swift in Sources */,
 				840D3CAF2ADACF8200166FA6 /* BpmEntity.swift in Sources */,
+				84A2BAB62ADBE96D00A22EC6 /* TimeSignatureMapper.swift in Sources */,
 				96C7E0F12AD569AD0069CFA8 /* PlayButtonStyle.swift in Sources */,
 				84893E572AC99C8C002DF1CB /* HapticTronomeApp.swift in Sources */,
+				84A2BAB22ADBE8EF00A22EC6 /* TimeSignatureDataSource.swift in Sources */,
 				96877C182AD80D3C00D6529F /* Glow.swift in Sources */,
 				840D3CC32ADAD54400166FA6 /* BpmText.swift in Sources */,
+				84A2BAAC2ADBE84100A22EC6 /* BpmRepositoryImpl.swift in Sources */,
 				840D3CB12ADACFE000166FA6 /* BpmRepository.swift in Sources */,
+				84A2BAB82ADBE9E900A22EC6 /* TimeSignatureViewModel.swift in Sources */,
 				840D3CC12ADAD4C000166FA6 /* BpmViewModel.swift in Sources */,
+				84A2BAA82ADBE7BA00A22EC6 /* FetchTimeSignatureUseCase.swift in Sources */,
 				96249BC32AD5D678009493BF /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

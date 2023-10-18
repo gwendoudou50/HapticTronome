@@ -11,10 +11,13 @@ struct HomePageBody: View {
     var body: some View {
         
         let bpmEntity = BpmEntity.previewMovie
+        let timeSignatureEntity = TimeSignatureEntity.previewTimeSignature
         
         
         VStack(spacing: 80) {
-            BpmText(bpm: bpmEntity.bpm, isPlaying: false)
+            LedRow(numberOfNote: timeSignatureEntity.numberOfNote)
+                .padding()
+            BpmText(bpm: bpmEntity.bpm, isPlaying: true)
             ButtonWidget()
         }
     }
