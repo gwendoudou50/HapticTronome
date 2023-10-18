@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct TimeSignatureModel {
+    var numberOfNote: Int
+    var noteValue: Int
+}
