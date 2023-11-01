@@ -13,7 +13,7 @@ struct HomePageBody: View {
     
     var body: some View {
         VStack(spacing: 80) {
-            LedRow(numberOfNote: 4)
+            LedRow(tempoViewModel: tempoViewModel)
                 .padding()
             TempoText(tempoViewModel: tempoViewModel)
             ButtonWidget(tempoViewModel: tempoViewModel)

@@ -26,7 +26,6 @@ class TempoViewModel: ObservableObject {
     
     // MARK: Private fucntions
     private func calculateTimeInterval() -> TimeInterval {
-        print(60.0 / self.tempo.bpm)
         return TimeInterval(60 / self.tempo.bpm)
     }
     
@@ -48,11 +47,17 @@ class TempoViewModel: ObservableObject {
         timer = Timer.scheduledTimer(withTimeInterval: calculateTimeInterval(), repeats: tempo.isPlaying) { time in
             self.audioPlayer.currentTime = 0
             self.audioPlayer.play()
+            if (self.tempo.timeSignature.numberOfNote > self.tempo.tempoTime) {
+                self.tempo.tempoTime += 1
+            } else {
+                self.tempo.tempoTime = 1
+            }
         }
     }
     
     func stopTempo() {
         self.tempo.isPlaying.toggle()
+        self.tempo.tempoTime = 1
         timer.invalidate()
     }
 }
