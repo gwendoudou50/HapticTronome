@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct HomePageBody: View {
+    
+    @StateObject var tempoViewModel: TempoViewModel = TempoViewModel()
+    
     var body: some View {
-        
-        let bpmEntity = BpmEntity.previewMovie
-        let timeSignatureEntity = TimeSignatureEntity.previewTimeSignature
-        
-        
         VStack(spacing: 80) {
-            LedRow(numberOfNote: timeSignatureEntity.numberOfNote)
+            LedRow(numberOfNote: 4)
                 .padding()
-            BpmText(bpm: bpmEntity.bpm, isPlaying: true)
-            ButtonWidget()
+            TempoText(tempoViewModel: tempoViewModel)
+            ButtonWidget(tempoViewModel: tempoViewModel)
         }
     }
 }

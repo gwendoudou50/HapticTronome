@@ -7,29 +7,29 @@
 
 import SwiftUI
 
-struct BpmText: View {
+struct TempoText: View {
     
-    @State var bpm: Int
-    @State var isPlaying: Bool
+    @ObservedObject var tempoViewModel: TempoViewModel
     
     var body: some View {
-        Text("\(bpm) BPM")
+        Text("\(tempoViewModel.tempo.bpm) BPM")
             .foregroundColor(.appWhite)
             .font(.system(size: 27))
             .fontWeight(.medium)
             .glow(
                 color: .appWhite,
-                radius: isPlaying ? 7 : 0,
+                radius: tempoViewModel.tempo.isPlaying ? 7 : 0,
                 overlay: false
             )
         
     }
 }
 
+
 #Preview {
-    ZStack {
+    return ZStack {
         Color.appBackground.edgesIgnoringSafeArea(.all)
-        BpmText(bpm: 80, isPlaying: false)
+        TempoText(tempoViewModel: TempoViewModel())
     }
     
 }
