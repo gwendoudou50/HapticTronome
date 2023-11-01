@@ -8,7 +8,7 @@
 import Foundation
 
 struct TempoModel {
-    var bpm: Int
+    var bpm: Double
     var timeSignature: TimeSignature
     var clickSong: String
     var clickSongExtension: String
@@ -18,10 +18,10 @@ struct TempoModel {
 extension TempoModel {
     static var template: TempoModel {
         return TempoModel(
-            bpm: 80,
+            bpm: 120.0,
             timeSignature: TimeSignature.template,
-            clickSong: "click",
-            clickSongExtension: "mp3",
+            clickSong: "Click",
+            clickSongExtension: "wav",
             isPlaying: false
         )
     }

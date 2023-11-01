@@ -12,12 +12,13 @@ struct ButtonWidget: View {
     
     @ObservedObject var tempoViewModel: TempoViewModel
     
-    
-    
     var body: some View {
         Button(action: {
-            tempoViewModel.tempo.isPlaying.toggle()
-            tempoViewModel.incrementBpm()
+            if (tempoViewModel.tempo.isPlaying) {
+                tempoViewModel.stopTempo()
+            } else {
+                tempoViewModel.startTempo()
+            }
         }) {
             Image(systemName: "play.fill")
         }
