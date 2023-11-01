@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
-struct BpmModel {
-    var bpm: Int
-}
+//
+//struct BpmModel {
+//    var bpm: Int
+//}

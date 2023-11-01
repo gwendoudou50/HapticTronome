@@ -7,15 +7,15 @@
 
 import Foundation
 
-class BpmViewModel: ObservableObject {
-    
-    private var _fetchBpmUseCase: FetchBpmUseCase
-    
-    init(_ fetchBpmUseCase: FetchBpmUseCase) {
-        self._fetchBpmUseCase = fetchBpmUseCase
-    }
-    
-    func fetchBpm() -> BpmEntity {
-        return _fetchBpmUseCase.call()
-    }
-}
+//class BpmViewModel: ObservableObject {
+//    
+//    private var _fetchBpmUseCase: FetchBpmUseCase
+//    
+//    init(_ fetchBpmUseCase: FetchBpmUseCase) {
+//        self._fetchBpmUseCase = fetchBpmUseCase
+//    }
+//    
+//    func fetchBpm() -> BpmEntity {
+//        return _fetchBpmUseCase.call()
+//    }
+//}

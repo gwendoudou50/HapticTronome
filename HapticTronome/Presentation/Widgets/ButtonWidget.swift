@@ -9,20 +9,22 @@ import Foundation
 import SwiftUI
 
 struct ButtonWidget: View {
-    @State private var isPlaying: Bool = false
-    var buttonStyle:any ButtonStyle = PlayButtonStyle()
+    
+    @ObservedObject var tempoViewModel: TempoViewModel
+    
     
     
     var body: some View {
         Button(action: {
-            isPlaying.toggle()
+            tempoViewModel.tempo.isPlaying.toggle()
+            tempoViewModel.incrementBpm()
         }) {
             Image(systemName: "play.fill")
         }
-        .buttonStyle(PlayButtonStyle(isPressed: isPlaying))
+        .buttonStyle(PlayButtonStyle(isPressed: tempoViewModel.tempo.isPlaying))
     }
 }
 
 #Preview {
-    ButtonWidget()
+    ButtonWidget(tempoViewModel: TempoViewModel())
 }
