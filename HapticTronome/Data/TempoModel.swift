@@ -13,6 +13,7 @@ struct TempoModel {
     var clickSong: String
     var clickSongExtension: String
     var isPlaying: Bool
+    var tempoTime: Int
 }
 
 extension TempoModel {
@@ -22,7 +23,8 @@ extension TempoModel {
             timeSignature: TimeSignature.template,
             clickSong: "Click",
             clickSongExtension: "wav",
-            isPlaying: false
+            isPlaying: false,
+            tempoTime: 1
         )
     }
 }
