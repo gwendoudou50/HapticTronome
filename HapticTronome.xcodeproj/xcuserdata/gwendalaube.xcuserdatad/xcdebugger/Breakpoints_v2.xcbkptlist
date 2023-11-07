@@ -87,84 +87,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3E35D7E0-E73E-4002-B091-9D24B751B37D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HapticTronome/Presentation/Pages/ContentPage/Home/HomePageBody.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "3E35D7E0-E73E-4002-B091-9D24B751B37D - 5c45ecf5ed14071b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HapticTronome.HomePageBody.body.getter : some"
-                  moduleName = "HapticTronome"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Presentation/Pages/ContentPage/Home/HomePageBody.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "172">
-               </Location>
-               <Location
-                  uuid = "3E35D7E0-E73E-4002-B091-9D24B751B37D - 18c7758420ad0214"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, HapticTronome.BpmText, HapticTronome.ButtonWidget)&gt; in HapticTronome.HomePageBody.body.getter : some"
-                  moduleName = "HapticTronome"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Presentation/Pages/ContentPage/Home/HomePageBody.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "3E35D7E0-E73E-4002-B091-9D24B751B37D - 5c45ecf5ed1404a5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HapticTronome.HomePageBody.body.getter : some"
-                  moduleName = "HapticTronome"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Presentation/Pages/ContentPage/Home/HomePageBody.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  uuid = "3E35D7E0-E73E-4002-B091-9D24B751B37D - 18c7758420ad01ea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, HapticTronome.BpmText, HapticTronome.ButtonWidget)&gt; in HapticTronome.HomePageBody.body.getter : some"
-                  moduleName = "HapticTronome"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Presentation/Pages/ContentPage/Home/HomePageBody.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "112">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "EBF20B2A-1F1F-4078-8CAC-0A23FF1B5480"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -198,7 +120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "848BCEC6-B1E7-4286-8B3C-F66A308C8977"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HapticTronome/Presentation/Widgets/ButtonWidget.swift"

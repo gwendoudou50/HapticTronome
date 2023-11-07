@@ -14,7 +14,7 @@ struct HomePage: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
+            ZStack (alignment: .center){
                 Color.appBackground.edgesIgnoringSafeArea(.all)
                 
                 HomePageBody()
