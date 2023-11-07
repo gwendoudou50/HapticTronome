@@ -9,18 +9,18 @@ import SwiftUI
 
 struct TempoText: View {
     
-    @ObservedObject var tempoViewModel: TempoViewModel 
+    @ObservedObject var tempoViewModel: TempoViewModel
     
     var body: some View {
         Text("\(String(format: "%.0f", tempoViewModel.tempo.bpm)) BPM")
             .foregroundColor(.appWhite)
-            .font(.system(size: 27))
+            .font(.system(size: 24))
             .fontWeight(.medium)
             .glow(
                 color: .appWhite,
                 radius: tempoViewModel.tempo.isPlaying ? 7 : 0,
                 overlay: false
-            )   
+            )
     }
 }
 

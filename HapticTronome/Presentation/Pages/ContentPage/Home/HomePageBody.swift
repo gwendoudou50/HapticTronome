@@ -10,13 +10,24 @@ import SwiftUI
 struct HomePageBody: View {
     
     @StateObject var tempoViewModel: TempoViewModel = TempoViewModel()
+    @ScaledMetric var vstackSpacing = 5
     
     var body: some View {
-        VStack(spacing: 80) {
+        VStack(alignment: .center, spacing: vstackSpacing) {
+            
             LedRow(tempoViewModel: tempoViewModel)
                 .padding()
+            
+            Spacer()
+            
             TempoText(tempoViewModel: tempoViewModel)
+
+            
+            CirclePotardTempoWidget()
+                .frame(height: 400)
+            
             ButtonWidget(tempoViewModel: tempoViewModel)
+            Spacer()
         }
     }
 }

@@ -2,15 +2,11 @@
   "sourceLanguage" : "en",
   "strings" : {
     "%@ BPM" : {
-
-    },
-    "%lld BPM" : {
-      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld BPM"
+            "value" : "%@ BPM"
           }
         }
       }

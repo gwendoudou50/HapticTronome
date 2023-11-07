@@ -11,6 +11,10 @@
 		840D3CC32ADAD54400166FA6 /* TempoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CC22ADAD54400166FA6 /* TempoText.swift */; };
 		84710AB42AF278F600DEAA62 /* TempoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB32AF278F600DEAA62 /* TempoModel.swift */; };
 		84710AB62AF2799300DEAA62 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB52AF2799300DEAA62 /* TimeSignature.swift */; };
+		8487B1A92AF437CF00BD2406 /* CirclePotardTempoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */; };
+		8487B1AB2AF4380400BD2406 /* LittleCirclePotardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */; };
+		8487B1AD2AF43A0400BD2406 /* UpperCirclePotardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1AC2AF43A0400BD2406 /* UpperCirclePotardWidget.swift */; };
+		8487B1AF2AF43E9400BD2406 /* UnderCirclePotardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1AE2AF43E9400BD2406 /* UnderCirclePotardWidget.swift */; };
 		84893E572AC99C8C002DF1CB /* HapticTronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */; };
 		84893E592AC99C8C002DF1CB /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84893E582AC99C8C002DF1CB /* HomePage.swift */; };
 		84893E5B2AC99C8D002DF1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84893E5A2AC99C8D002DF1CB /* Assets.xcassets */; };
@@ -31,6 +35,10 @@
 		840D3CC22ADAD54400166FA6 /* TempoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoText.swift; sourceTree = "<group>"; };
 		84710AB32AF278F600DEAA62 /* TempoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoModel.swift; sourceTree = "<group>"; };
 		84710AB52AF2799300DEAA62 /* TimeSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
+		8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePotardTempoWidget.swift; sourceTree = "<group>"; };
+		8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleCirclePotardWidget.swift; sourceTree = "<group>"; };
+		8487B1AC2AF43A0400BD2406 /* UpperCirclePotardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperCirclePotardWidget.swift; sourceTree = "<group>"; };
+		8487B1AE2AF43E9400BD2406 /* UnderCirclePotardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderCirclePotardWidget.swift; sourceTree = "<group>"; };
 		84893E532AC99C8C002DF1CB /* HapticTronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticTronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTronomeApp.swift; sourceTree = "<group>"; };
 		84893E582AC99C8C002DF1CB /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
@@ -64,6 +72,17 @@
 				840188342AF28816007CEF03 /* Click.wav */,
 			);
 			path = Audio;
+			sourceTree = "<group>";
+		};
+		8487B1A72AF437B400BD2406 /* TempoPotard */ = {
+			isa = PBXGroup;
+			children = (
+				8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */,
+				8487B1AC2AF43A0400BD2406 /* UpperCirclePotardWidget.swift */,
+				8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */,
+				8487B1AE2AF43E9400BD2406 /* UnderCirclePotardWidget.swift */,
+			);
+			path = TempoPotard;
 			sourceTree = "<group>";
 		};
 		84893E4A2AC99C8C002DF1CB = {
@@ -195,6 +214,7 @@
 		96C7E0EC2AD567DA0069CFA8 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				8487B1A72AF437B400BD2406 /* TempoPotard */,
 				84A2BAB92ADBEA5000A22EC6 /* LED */,
 				96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */,
 				840D3CC22ADAD54400166FA6 /* TempoText.swift */,
@@ -286,7 +306,11 @@
 				84A2BABD2ADBED9D00A22EC6 /* LedRow.swift in Sources */,
 				84893E592AC99C8C002DF1CB /* HomePage.swift in Sources */,
 				84710AB42AF278F600DEAA62 /* TempoModel.swift in Sources */,
+				8487B1A92AF437CF00BD2406 /* CirclePotardTempoWidget.swift in Sources */,
+				8487B1AF2AF43E9400BD2406 /* UnderCirclePotardWidget.swift in Sources */,
+				8487B1AD2AF43A0400BD2406 /* UpperCirclePotardWidget.swift in Sources */,
 				84A2BABB2ADBEA6200A22EC6 /* LedWidget.swift in Sources */,
+				8487B1AB2AF4380400BD2406 /* LittleCirclePotardWidget.swift in Sources */,
 				96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */,
 				84893E712AC9A501002DF1CB /* HomePageBody.swift in Sources */,
 				96C7E0F12AD569AD0069CFA8 /* PlayButtonStyle.swift in Sources */,
