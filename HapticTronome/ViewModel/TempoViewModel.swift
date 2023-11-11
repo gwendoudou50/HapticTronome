@@ -7,14 +7,15 @@
 
 import Foundation
 import AVKit
+import SwiftUI
+
 
 class TempoViewModel: ObservableObject {
     
     @Published var tempo: TempoModel = TempoModel.template
     @Published var audioPlayer: AVAudioPlayer!
     
-    private var timer: Timer = Timer()
-    
+    private var timer: Timer = Timer()    
     
     let minimumTempo = 40.0
     let maximumTempo = 400.0
@@ -60,4 +61,6 @@ class TempoViewModel: ObservableObject {
         self.tempo.tempoTime = 1
         timer.invalidate()
     }
+    
+    
 }

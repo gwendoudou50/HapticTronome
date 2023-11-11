@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct CirclePotardTempoWidget: View {
+    
+    @StateObject var potentiometerViewModel: PotentiometerViewModel = PotentiometerViewModel()
+    @ObservedObject var tempoViewModel: TempoViewModel
+    
     var body: some View {
         GeometryReader { geometry in
             let size: CGFloat = geometry.size.width * 0.6
@@ -22,26 +26,44 @@ struct CirclePotardTempoWidget: View {
                         width: underCircleSize,
                         height: underCircleSize
                     )
-                UpperCirclePotardWidget()
-                    .frame(
-                        width: upperCircleSize,
-                        height: upperCircleSize
-                    )
-                LittleCirclePotardWidget(size: litterCircleSize)
-                    .offset(x: littleCircleXOffset)
+                ZStack {
+                    UpperCirclePotardWidget()
+                        .frame(
+                            width: upperCircleSize,
+                            height: upperCircleSize
+                        )
+                    LittleCirclePotardWidget(size: litterCircleSize)
+                        .offset(x: littleCircleXOffset)
+                        .rotationEffect(
+                            .init(degrees: potentiometerViewModel.angle)
+                        )
+                }
+                .gesture(DragGesture(minimumDistance: 0)
+                    .onChanged({ value in
+                        potentiometerViewModel
+                            .onChangedTempo(value: value, tempoViewModel: tempoViewModel)
+                    })
+                        .onEnded({ _ in
+                            if (tempoViewModel.tempo.isPlaying) {
+                                tempoViewModel.stopTempo()
+                                tempoViewModel.startTempo()
+                            }
+                        })
+                         
+                )
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .alignmentGuide(HorizontalAlignment.center) { d in
-                    d[HorizontalAlignment.center]
-                }
-                .alignmentGuide(VerticalAlignment.center) { d in
-                    d[VerticalAlignment.center]
-                }
+                d[HorizontalAlignment.center]
+            }
+            .alignmentGuide(VerticalAlignment.center) { d in
+                d[VerticalAlignment.center]
+            }
         }
     }
 }
 
 #Preview {
-    CirclePotardTempoWidget()
+    CirclePotardTempoWidget(tempoViewModel: TempoViewModel())
         .padding()
 }

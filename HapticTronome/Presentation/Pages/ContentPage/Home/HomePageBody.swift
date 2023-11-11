@@ -23,8 +23,8 @@ struct HomePageBody: View {
             TempoText(tempoViewModel: tempoViewModel)
 
             
-            CirclePotardTempoWidget()
-                .frame(height: 400)
+            CirclePotardTempoWidget(tempoViewModel: tempoViewModel)
+                .frame(height: 300)
             
             ButtonWidget(tempoViewModel: tempoViewModel)
             Spacer()
