@@ -15,7 +15,7 @@ class PotentiometerViewModel: ObservableObject {
     
     private var lastAngle: Double = 0.0
     
-    func onChangedTempo(value: DragGesture.Value, tempoViewModel: TempoViewModel) {
+    func onChangedTempo(value: DragGesture.Value, metronomeViewModel: MetronomeViewModel) {
         let translation = value.location
         let vector = CGVector(dx: translation.x - 100, dy: translation.y - 100)
         let radians = atan2(vector.dy, vector.dx)
@@ -25,12 +25,12 @@ class PotentiometerViewModel: ObservableObject {
         
         
         if (angle >= lastAngle + 5.0) {
-            tempoViewModel.incrementBpm()
+            metronomeViewModel.incrementBpm()
             self.lastAngle = angle
         }
         
         if (angle <= lastAngle - 5.0) {
-            tempoViewModel.decrementBpm()
+            metronomeViewModel.decrementBpm()
             self.lastAngle = angle
         }
     }

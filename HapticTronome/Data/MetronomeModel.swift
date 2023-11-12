@@ -7,22 +7,22 @@
 
 import Foundation
 
-struct TempoModel {
+struct MetronomeModel {
     var bpm: Double
     var timeSignature: TimeSignature
-    var clickSong: String
-    var clickSongExtension: String
+    var soundFilePath: String
+    var soundFileExtension: String
     var isPlaying: Bool
     var tempoTime: Int
 }
 
-extension TempoModel {
-    static var template: TempoModel {
-        return TempoModel(
+extension MetronomeModel {
+    static var template: MetronomeModel {
+        return MetronomeModel(
             bpm: 120.0,
             timeSignature: TimeSignature.template,
-            clickSong: "Click",
-            clickSongExtension: "wav",
+            soundFilePath: "Click",
+            soundFileExtension: "wav",
             isPlaying: false,
             tempoTime: 1
         )

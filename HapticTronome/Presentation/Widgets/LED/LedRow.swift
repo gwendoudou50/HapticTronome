@@ -9,16 +9,16 @@ import SwiftUI
 
 struct LedRow: View {
     
-    @ObservedObject var tempoViewModel: TempoViewModel
+    @ObservedObject var metronomeViewModel: MetronomeViewModel
     let ledRows = [
         GridItem(.flexible())
     ]
     
     var body: some View {
         LazyHGrid(rows: ledRows, spacing: 50) {
-            ForEach(0 ..< tempoViewModel.tempo.timeSignature.numberOfNote, id: \.self) { led in
+            ForEach(0 ..< metronomeViewModel.metronome.timeSignature.numberOfNote, id: \.self) { led in
                 VStack {
-                    if ((tempoViewModel.tempo.tempoTime-1 == led) && (tempoViewModel.tempo.isPlaying)) {
+                    if ((metronomeViewModel.metronome.tempoTime-1 == led) && (metronomeViewModel.metronome.isPlaying)) {
                         LedWidget(isOn: true)
                     } else {
                         LedWidget(isOn: false)
@@ -42,5 +42,5 @@ struct LedRow: View {
 }
 
 #Preview {
-    LedRow(tempoViewModel: TempoViewModel())
+    LedRow(metronomeViewModel: MetronomeViewModel())
 }

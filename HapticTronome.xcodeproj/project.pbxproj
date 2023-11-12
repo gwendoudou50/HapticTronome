@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		840188352AF28816007CEF03 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 840188342AF28816007CEF03 /* Click.wav */; };
 		840D3CC32ADAD54400166FA6 /* TempoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CC22ADAD54400166FA6 /* TempoText.swift */; };
-		84710AB42AF278F600DEAA62 /* TempoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB32AF278F600DEAA62 /* TempoModel.swift */; };
+		84710AB42AF278F600DEAA62 /* MetronomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB32AF278F600DEAA62 /* MetronomeModel.swift */; };
 		84710AB62AF2799300DEAA62 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB52AF2799300DEAA62 /* TimeSignature.swift */; };
 		8487B1A92AF437CF00BD2406 /* CirclePotardTempoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */; };
 		8487B1AB2AF4380400BD2406 /* LittleCirclePotardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */; };
@@ -24,7 +24,7 @@
 		84A2BABB2ADBEA6200A22EC6 /* LedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BABA2ADBEA6200A22EC6 /* LedWidget.swift */; };
 		84A2BABD2ADBED9D00A22EC6 /* LedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BABC2ADBED9D00A22EC6 /* LedRow.swift */; };
 		84BEFF3D2AFAD98900C0064E /* PotentiometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */; };
-		84FAC5D42ADFC4F400F9C4B6 /* TempoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAC5D32ADFC4F400F9C4B6 /* TempoViewModel.swift */; };
+		84FAC5D42ADFC4F400F9C4B6 /* MetronomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */; };
 		96249BC32AD5D678009493BF /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96249BC22AD5D678009493BF /* constants.swift */; };
 		96877C182AD80D3C00D6529F /* Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96877C172AD80D3C00D6529F /* Glow.swift */; };
 		96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */; };
@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		840188342AF28816007CEF03 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Click.wav; sourceTree = "<group>"; };
 		840D3CC22ADAD54400166FA6 /* TempoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoText.swift; sourceTree = "<group>"; };
-		84710AB32AF278F600DEAA62 /* TempoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoModel.swift; sourceTree = "<group>"; };
+		84710AB32AF278F600DEAA62 /* MetronomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeModel.swift; sourceTree = "<group>"; };
 		84710AB52AF2799300DEAA62 /* TimeSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
 		8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePotardTempoWidget.swift; sourceTree = "<group>"; };
 		8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleCirclePotardWidget.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		84A2BABA2ADBEA6200A22EC6 /* LedWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedWidget.swift; sourceTree = "<group>"; };
 		84A2BABC2ADBED9D00A22EC6 /* LedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedRow.swift; sourceTree = "<group>"; };
 		84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentiometerViewModel.swift; sourceTree = "<group>"; };
-		84FAC5D32ADFC4F400F9C4B6 /* TempoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoViewModel.swift; sourceTree = "<group>"; };
+		84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewModel.swift; sourceTree = "<group>"; };
 		96249BC22AD5D678009493BF /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		96877C172AD80D3C00D6529F /* Glow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glow.swift; sourceTree = "<group>"; };
 		96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWidget.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				84710AB52AF2799300DEAA62 /* TimeSignature.swift */,
-				84710AB32AF278F600DEAA62 /* TempoModel.swift */,
+				84710AB32AF278F600DEAA62 /* MetronomeModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 		84FAC5CF2ADFC40000F9C4B6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				84FAC5D32ADFC4F400F9C4B6 /* TempoViewModel.swift */,
+				84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */,
 				84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */,
 			);
 			path = ViewModel;
@@ -308,7 +308,7 @@
 			files = (
 				84A2BABD2ADBED9D00A22EC6 /* LedRow.swift in Sources */,
 				84893E592AC99C8C002DF1CB /* HomePage.swift in Sources */,
-				84710AB42AF278F600DEAA62 /* TempoModel.swift in Sources */,
+				84710AB42AF278F600DEAA62 /* MetronomeModel.swift in Sources */,
 				8487B1A92AF437CF00BD2406 /* CirclePotardTempoWidget.swift in Sources */,
 				8487B1AF2AF43E9400BD2406 /* UnderCirclePotardWidget.swift in Sources */,
 				8487B1AD2AF43A0400BD2406 /* UpperCirclePotardWidget.swift in Sources */,
@@ -320,7 +320,7 @@
 				96C7E0F12AD569AD0069CFA8 /* PlayButtonStyle.swift in Sources */,
 				84893E572AC99C8C002DF1CB /* HapticTronomeApp.swift in Sources */,
 				96877C182AD80D3C00D6529F /* Glow.swift in Sources */,
-				84FAC5D42ADFC4F400F9C4B6 /* TempoViewModel.swift in Sources */,
+				84FAC5D42ADFC4F400F9C4B6 /* MetronomeViewModel.swift in Sources */,
 				840D3CC32ADAD54400166FA6 /* TempoText.swift in Sources */,
 				96249BC32AD5D678009493BF /* constants.swift in Sources */,
 				84710AB62AF2799300DEAA62 /* TimeSignature.swift in Sources */,
