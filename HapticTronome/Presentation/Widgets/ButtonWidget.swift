@@ -10,22 +10,22 @@ import SwiftUI
 
 struct ButtonWidget: View {
     
-    @ObservedObject var tempoViewModel: TempoViewModel
+    @ObservedObject var metronomeViewModel: MetronomeViewModel
     
     var body: some View {
         Button(action: {
-            if (tempoViewModel.tempo.isPlaying) {
-                tempoViewModel.stopTempo()
+            if (metronomeViewModel.metronome.isPlaying) {
+                metronomeViewModel.stopTempo()
             } else {
-                tempoViewModel.startTempo()
+                metronomeViewModel.startMetronome()
             }
         }) {
             Image(systemName: "play.fill")
         }
-        .buttonStyle(PlayButtonStyle(isPressed: tempoViewModel.tempo.isPlaying))
+        .buttonStyle(PlayButtonStyle(isPressed: metronomeViewModel.metronome.isPlaying))
     }
 }
 
 #Preview {
-    ButtonWidget(tempoViewModel: TempoViewModel())
+    ButtonWidget(metronomeViewModel: MetronomeViewModel())
 }

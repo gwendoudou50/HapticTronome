@@ -9,16 +9,16 @@ import SwiftUI
 
 struct TempoText: View {
     
-    @ObservedObject var tempoViewModel: TempoViewModel
+    @ObservedObject var metronomeViewModel: MetronomeViewModel
     
     var body: some View {
-        Text("\(String(format: "%.0f", tempoViewModel.tempo.bpm)) BPM")
+        Text("\(String(format: "%.0f", metronomeViewModel.metronome.bpm)) BPM")
             .foregroundColor(.appWhite)
             .font(.system(size: 24))
             .fontWeight(.medium)
             .glow(
                 color: .appWhite,
-                radius: tempoViewModel.tempo.isPlaying ? 7 : 0,
+                radius: metronomeViewModel.metronome.isPlaying ? 7 : 0,
                 overlay: false
             )
     }
@@ -28,6 +28,6 @@ struct TempoText: View {
 #Preview {
     return ZStack {
         Color.appBackground.edgesIgnoringSafeArea(.all)
-        TempoText(tempoViewModel: TempoViewModel())
+        TempoText(metronomeViewModel: MetronomeViewModel())
     }
 }
