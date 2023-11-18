@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		840D3CC32ADAD54400166FA6 /* TempoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CC22ADAD54400166FA6 /* TempoText.swift */; };
 		843D31AD2B08CF2000D55886 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 843D31AC2B08CF2000D55886 /* Click.wav */; };
+		843D31B02B08D78600D55886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843D31AF2B08D78600D55886 /* LaunchScreen.storyboard */; };
 		84710AB42AF278F600DEAA62 /* MetronomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB32AF278F600DEAA62 /* MetronomeModel.swift */; };
 		84710AB62AF2799300DEAA62 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB52AF2799300DEAA62 /* TimeSignature.swift */; };
 		8487B1A92AF437CF00BD2406 /* CirclePotardTempoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		840D3CC22ADAD54400166FA6 /* TempoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoText.swift; sourceTree = "<group>"; };
 		843D31AC2B08CF2000D55886 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Click.wav; path = ../../../../Downloads/Click.wav; sourceTree = "<group>"; };
+		843D31AE2B08D60100D55886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		843D31AF2B08D78600D55886 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84710AB32AF278F600DEAA62 /* MetronomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeModel.swift; sourceTree = "<group>"; };
 		84710AB52AF2799300DEAA62 /* TimeSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
 		8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePotardTempoWidget.swift; sourceTree = "<group>"; };
@@ -106,12 +109,14 @@
 		84893E552AC99C8C002DF1CB /* HapticTronome */ = {
 			isa = PBXGroup;
 			children = (
+				843D31AE2B08D60100D55886 /* Info.plist */,
 				84893E672AC99E7D002DF1CB /* Core */,
 				84893E652AC99E58002DF1CB /* Data */,
 				84FAC5CF2ADFC40000F9C4B6 /* ViewModel */,
 				84893E642AC99E4F002DF1CB /* Presentation */,
 				84893E5A2AC99C8D002DF1CB /* Assets.xcassets */,
 				84893E5C2AC99C8D002DF1CB /* Preview Content */,
+				843D31AF2B08D78600D55886 /* LaunchScreen.storyboard */,
 			);
 			path = HapticTronome;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				84893E5E2AC99C8D002DF1CB /* Preview Assets.xcassets in Resources */,
 				84893E5B2AC99C8D002DF1CB /* Assets.xcassets in Resources */,
 				843D31AD2B08CF2000D55886 /* Click.wav in Resources */,
+				843D31B02B08D78600D55886 /* LaunchScreen.storyboard in Resources */,
 				84893E732AC9B17F002DF1CB /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,9 +466,11 @@
 				DEVELOPMENT_TEAM = 748Z57AM2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HapticTronome/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,9 +497,11 @@
 				DEVELOPMENT_TEAM = 748Z57AM2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HapticTronome/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
