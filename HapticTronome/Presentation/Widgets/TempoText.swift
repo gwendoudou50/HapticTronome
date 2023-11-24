@@ -16,6 +16,7 @@ struct TempoText: View {
             .foregroundColor(.appWhite)
             .font(.system(size: 24))
             .fontWeight(.medium)
+            .opacity(metronomeViewModel.metronome.isPlaying ? 1.0 : 0.3)
             .glow(
                 color: .appWhite,
                 radius: metronomeViewModel.metronome.isPlaying ? 7 : 0,
