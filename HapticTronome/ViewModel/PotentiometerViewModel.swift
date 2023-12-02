@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 class PotentiometerViewModel: ObservableObject {
     
     @Published var angle: Double = 0.0

@@ -1,0 +1,37 @@
+{
+    "Version": 1.0,
+    "Metadata":
+    {
+        "Project" : "HapticTronome",
+        "Created" : "25 November 2023",
+        "Description" : "A continuous event tweaked by sloped parameter curves, emphasized by a precisely placed transient event, creating the feeling of a spring or rubberband."
+    },
+    "Pattern":
+    [
+        {
+            "Event":
+            {
+                "Time": 0.0,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.8 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.3 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.025,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.9 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.0 }
+                ]
+            }
+        }
+    ]
+}
+

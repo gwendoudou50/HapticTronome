@@ -14,6 +14,7 @@ struct MetronomeModel {
     var soundFileExtension: String
     var isPlaying: Bool
     var tempoTime: Int
+    var haptic: HapticViewModel
 }
 
 extension MetronomeModel {
@@ -24,7 +25,8 @@ extension MetronomeModel {
             soundFilePath: "Click",
             soundFileExtension: "wav",
             isPlaying: false,
-            tempoTime: 1
+            tempoTime: 1,
+            haptic: HapticViewModel()
         )
     }
 }
