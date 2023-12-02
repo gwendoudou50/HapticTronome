@@ -13,6 +13,7 @@ class PotentiometerViewModel: ObservableObject {
     @Published var angle: Double = 0.0
     
     private var lastAngle: Double = 0.0
+    private var feedbackGenerator = UISelectionFeedbackGenerator()
     
     func onChangedTempo(value: DragGesture.Value, metronomeViewModel: MetronomeViewModel) {
         let translation = value.location
@@ -26,11 +27,17 @@ class PotentiometerViewModel: ObservableObject {
         if (angle >= lastAngle + 5.0) {
             metronomeViewModel.incrementBpm()
             self.lastAngle = angle
+            
+            // Play haptic vibration
+            feedbackGenerator.selectionChanged()
         }
         
         if (angle <= lastAngle - 5.0) {
             metronomeViewModel.decrementBpm()
             self.lastAngle = angle
+            
+            // Play haptic vibration
+            feedbackGenerator.selectionChanged()
         }
     }
 }
