@@ -13,7 +13,7 @@ struct TempoText: View {
     
     var body: some View {
         Text("\(String(format: "%.0f", metronomeViewModel.metronome.bpm)) BPM")
-            .foregroundColor(.appWhite)
+            .foregroundColor(.appWhite.opacity(metronomeViewModel.metronome.isPlaying ? 1 : 0.15))
             .font(.system(size: 24))
             .fontWeight(.medium)
             .glow(
