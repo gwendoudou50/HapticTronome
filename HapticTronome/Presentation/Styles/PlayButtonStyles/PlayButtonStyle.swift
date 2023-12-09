@@ -21,7 +21,7 @@ struct PlayButtonStyle: ButtonStyle {
                 .background(
                     ZStack {
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(AppConstants().playButtonGradient)
+                            .foregroundStyle(.linearGradient(AppConstants().playButtonGradient, startPoint: .top, endPoint: .bottom))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
                                     .stroke(Color.appBlack, lineWidth: 4)
