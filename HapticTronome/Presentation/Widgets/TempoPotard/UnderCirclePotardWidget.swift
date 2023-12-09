@@ -13,14 +13,22 @@ struct UnderCirclePotardWidget: View {
     @State var borderSize: CGFloat
     
     var body: some View {
-        Circle()
-            .fill(.appUnderCirclePotard)
-            .strokeBorder(
-                AppConstants().underCirclePotardBorderGradient,
-                lineWidth: borderSize
-            )
+        VStack {
+            
+            Circle()
+                .fill(
+                    .appUnderCirclePotard,
+                    strokeBorder: LinearGradient(
+                        gradient: AppConstants().underCirclePotardBorderGradient,
+                        startPoint: .top,
+                        endPoint: .bottom
+                    ),
+                    lineWidth: borderSize
+                )
+        }
     }
 }
+
 
 #Preview {
     UnderCirclePotardWidget(size: 100, borderSize: 0.1)

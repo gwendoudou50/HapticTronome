@@ -16,7 +16,7 @@ struct CirclePotardTempoWidget: View {
         GeometryReader { geometry in
             let size: CGFloat = geometry.size.width * 0.6
             let underCircleSize: CGFloat = size
-            let underCircleBorderSize: CGFloat = size * 0.1
+            let underCircleBorderSize: CGFloat = size * 0.07
             let upperCircleSize: CGFloat = underCircleSize - underCircleBorderSize
             let litterCircleSize: CGFloat = size * 0.1
             let littleCircleXOffset: CGFloat = (upperCircleSize / 3) * -1

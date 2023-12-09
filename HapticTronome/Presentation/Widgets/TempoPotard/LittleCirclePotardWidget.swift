@@ -12,31 +12,30 @@ struct LittleCirclePotardWidget: View {
     @State var size: CGFloat
     
     var body: some View {
-        Circle()
-            .foregroundStyle(
-                .shadow(
-                    .inner(
-                        color: .white.opacity(0.25),
+        ZStack {
+            Circle()
+                .fill(.appPrimary)
+                .frame(width: size, height: size)
+                .modifier(
+                    InnerShadowModifier(
+                        lineWidth: 4,
                         radius: 4,
-                        x: 0,
-                        y: 03
+                        firstX: 0,
+                        firstY: -3,
+                        secondX: 0,
+                        secondY: 4,
+                        firstGradientStartPoint: .bottom,
+                        firstGradientEndPoint: .center,
+                        secondGradientStartPoint: .top,
+                        secondGradientEndPoint: .center
                     )
                 )
-                .shadow(
-                    .inner(
-                        color: .black.opacity(0.25),
-                        radius: 4,
-                        x: 0,
-                        y: 4
-                    )
-                )
-            )
-            .frame(width: size, height: size)
-            .foregroundColor(.appPrimary)
+        }
+        
     }
 }
 
 #Preview {
-    LittleCirclePotardWidget(size: 20)
+    LittleCirclePotardWidget(size: 100)
         .padding()
 }

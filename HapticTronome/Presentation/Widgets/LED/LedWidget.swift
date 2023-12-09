@@ -12,30 +12,27 @@ struct LedWidget: View {
     @State var isOn: Bool = false
     
     var body: some View {
-        ZStack {
-            Circle()
-                .foregroundStyle(
-                    .shadow(
-                        .inner(
-                            color: .appBlack.opacity(0.25),
-                            radius: 10,
-                            x: 4,
-                            y: 0
-                        )
-                    )
-                    .shadow(
-                        .inner(
-                            color: .appBlack.opacity(0.25),
-                            radius: 4,
-                            x: -2,
-                            y: -2
-                        )
-                    )
-                )
-                .foregroundColor(isOn ? .appPrimary : .appWhite)
-        }
-        .frame(width: 40, height: 40)
+        let color: Color = isOn ? .appPrimary : .appWhite
         
+        Circle()
+            .fill(color)
+            .modifier(
+                InnerShadowModifier(
+                    firstColor: .black,
+                    secondColor: .black,
+                    lineWidth: 8,
+                    radius: 4,
+                    firstX: 0,
+                    firstY: 4,
+                    secondX: -2,
+                    secondY: -2,
+                    firstGradientStartPoint: .bottom,
+                    firstGradientEndPoint: .center,
+                    secondGradientStartPoint: .top,
+                    secondGradientEndPoint: .center
+                )
+            )
+            .frame(width: 40, height: 40)
     }
 }
 

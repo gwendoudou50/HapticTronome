@@ -13,8 +13,10 @@
 		8448CF242B11E3F000BE0AF2 /* HapticViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448CF232B11E3F000BE0AF2 /* HapticViewModel.swift */; };
 		8448CF2A2B11E7DB00BE0AF2 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448CF292B11E7DB00BE0AF2 /* DeviceManager.swift */; };
 		8448CF2C2B11EAF200BE0AF2 /* HapticClick.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 8448CF2B2B11EAF200BE0AF2 /* HapticClick.ahap */; };
+		84554DAF2B226737004A39A1 /* ShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84554DAE2B226737004A39A1 /* ShadowModifier.swift */; };
 		84710AB42AF278F600DEAA62 /* MetronomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB32AF278F600DEAA62 /* MetronomeModel.swift */; };
 		84710AB62AF2799300DEAA62 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB52AF2799300DEAA62 /* TimeSignature.swift */; };
+		847F8EC82B1E706100D0057E /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F8EC72B1E706100D0057E /* Shape.swift */; };
 		8487B1A92AF437CF00BD2406 /* CirclePotardTempoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */; };
 		8487B1AB2AF4380400BD2406 /* LittleCirclePotardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */; };
 		8487B1AD2AF43A0400BD2406 /* UpperCirclePotardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1AC2AF43A0400BD2406 /* UpperCirclePotardWidget.swift */; };
@@ -43,8 +45,10 @@
 		8448CF232B11E3F000BE0AF2 /* HapticViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticViewModel.swift; sourceTree = "<group>"; };
 		8448CF292B11E7DB00BE0AF2 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
 		8448CF2B2B11EAF200BE0AF2 /* HapticClick.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HapticClick.ahap; sourceTree = "<group>"; };
+		84554DAE2B226737004A39A1 /* ShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowModifier.swift; sourceTree = "<group>"; };
 		84710AB32AF278F600DEAA62 /* MetronomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeModel.swift; sourceTree = "<group>"; };
 		84710AB52AF2799300DEAA62 /* TimeSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
+		847F8EC72B1E706100D0057E /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePotardTempoWidget.swift; sourceTree = "<group>"; };
 		8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleCirclePotardWidget.swift; sourceTree = "<group>"; };
 		8487B1AC2AF43A0400BD2406 /* UpperCirclePotardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperCirclePotardWidget.swift; sourceTree = "<group>"; };
@@ -101,6 +105,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		84554DAD2B226721004A39A1 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				84554DAE2B226737004A39A1 /* ShadowModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		8487B1A72AF437B400BD2406 /* TempoPotard */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +167,7 @@
 		84893E642AC99E4F002DF1CB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				84554DAD2B226721004A39A1 /* Modifier */,
 				84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */,
 				96877C162AD80D2100D6529F /* Extensions */,
 				96C7E0EF2AD5699F0069CFA8 /* Styles */,
@@ -240,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				96877C172AD80D3C00D6529F /* Glow.swift */,
+				847F8EC72B1E706100D0057E /* Shape.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,10 +358,12 @@
 				84710AB42AF278F600DEAA62 /* MetronomeModel.swift in Sources */,
 				8487B1A92AF437CF00BD2406 /* CirclePotardTempoWidget.swift in Sources */,
 				8448CF242B11E3F000BE0AF2 /* HapticViewModel.swift in Sources */,
+				84554DAF2B226737004A39A1 /* ShadowModifier.swift in Sources */,
 				8487B1AF2AF43E9400BD2406 /* UnderCirclePotardWidget.swift in Sources */,
 				8487B1AD2AF43A0400BD2406 /* UpperCirclePotardWidget.swift in Sources */,
 				84A2BABB2ADBEA6200A22EC6 /* LedWidget.swift in Sources */,
 				8487B1AB2AF4380400BD2406 /* LittleCirclePotardWidget.swift in Sources */,
+				847F8EC82B1E706100D0057E /* Shape.swift in Sources */,
 				96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */,
 				84893E712AC9A501002DF1CB /* HomePageBody.swift in Sources */,
 				84BEFF3D2AFAD98900C0064E /* PotentiometerViewModel.swift in Sources */,
@@ -501,7 +517,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,7 +549,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
