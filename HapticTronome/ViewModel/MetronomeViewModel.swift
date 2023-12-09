@@ -16,6 +16,7 @@ class MetronomeViewModel: ObservableObject {
     @Published var audioPlayer: AVAudioPlayer!
     
     private var timer: Timer?
+    private var impactFeedbackGenerator = UIImpactFeedbackGenerator()
     
     let minimumTempo = 40.0
     let maximumTempo = 400.0
@@ -44,6 +45,7 @@ class MetronomeViewModel: ObservableObject {
     }
     
     func startMetronome() {
+        playHapticFeedback()
         self.audioPlayer.prepareToPlay()
         self.audioPlayer.currentTime = 0
         self.audioPlayer.play()
@@ -63,10 +65,16 @@ class MetronomeViewModel: ObservableObject {
     }
     
     func stopTempo() {
+        playHapticFeedback()
         self.metronome.isPlaying.toggle()
         self.metronome.tempoTime = 1
         timer?.invalidate()
         timer = nil
+    }
+    
+    private func playHapticFeedback() {
+        impactFeedbackGenerator.prepare()
+        impactFeedbackGenerator.impactOccurred()
     }
     
     
