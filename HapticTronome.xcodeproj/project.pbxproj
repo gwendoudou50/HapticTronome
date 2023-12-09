@@ -167,8 +167,8 @@
 		84893E642AC99E4F002DF1CB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				84554DAD2B226721004A39A1 /* Modifier */,
 				84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */,
+				84554DAD2B226721004A39A1 /* Modifier */,
 				96877C162AD80D2100D6529F /* Extensions */,
 				96C7E0EF2AD5699F0069CFA8 /* Styles */,
 				96C7E0EC2AD567DA0069CFA8 /* Widgets */,
