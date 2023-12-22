@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 extension Circle {
-    func fill<Fill: ShapeStyle, Stroke: ShapeStyle>(_ fillStyle: Fill, strokeBorder strokeStyle: Stroke, lineWidth: CGFloat = 1) -> some View {
+    func fill<Fill: ShapeStyle, Stroke: ShapeStyle>(_ fillStyle: Fill, strokeBorder strokeStyle: Stroke, lineWidth: CGFloat = 1, minimumLineWidth: CGFloat = 0) -> some View {
         self
-            .stroke(strokeStyle, lineWidth: lineWidth)
+            .stroke(strokeStyle, lineWidth: minimumLineWidth > lineWidth ? minimumLineWidth : lineWidth)
             .background(self.fill(fillStyle))
     }
 }

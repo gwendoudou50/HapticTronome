@@ -231,49 +231,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D39D35EC-BBBF-4E20-B5B9-3193EAC2DFD0"
-            shouldBeEnabled = "No"
+            uuid = "DF3DD8AD-FBFE-488F-9B01-928E0CC05CF9"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HapticTronome/Presentation/Widgets/LED/LedWidget.swift"
+            filePath = "HapticTronome/Presentation/Widgets/TempoPotard/LittleCirclePotardWidget.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "D39D35EC-BBBF-4E20-B5B9-3193EAC2DFD0 - 95129f6f04063f9d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HapticTronome.LedWidget.body.getter : some"
-                  moduleName = "HapticTronome"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Presentation/Widgets/LED/LedWidget.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "D39D35EC-BBBF-4E20-B5B9-3193EAC2DFD0 - 95129f6f04063f9d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HapticTronome.LedWidget.body.getter : some"
-                  moduleName = "HapticTronome"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Presentation/Widgets/LED/LedWidget.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "116">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

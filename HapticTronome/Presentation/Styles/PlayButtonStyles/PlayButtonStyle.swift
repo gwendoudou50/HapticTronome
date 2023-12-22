@@ -9,14 +9,16 @@ import SwiftUI
 
 struct PlayButtonStyle: ButtonStyle {
     
+    @ScaledMetric var horizontalPadding = UIScreen.main.bounds.width * 0.095
+    @ScaledMetric var verticalPadding = UIScreen.main.bounds.width * 0.06
     var isPressed: Bool = false
     
     func makeBody(configuration: Configuration) -> some View {
         if (!isPressed) {
             configuration.label
                 .font(.body)
-                .padding(.horizontal, 26)
-                .padding(.vertical, 16)
+                .padding(.horizontal, horizontalPadding)
+                .padding(.vertical, verticalPadding)
                 .foregroundColor(Color.appPrimary)
                 .background(
                     ZStack {
@@ -35,8 +37,8 @@ struct PlayButtonStyle: ButtonStyle {
         } else {
             configuration.label
                 .font(.body)
-                .padding(.horizontal, 26)
-                .padding(.vertical, 16)
+                .padding(.horizontal, horizontalPadding)
+                .padding(.vertical, verticalPadding)
                 .foregroundColor(Color.appWhite)
                 .glow(color: Color.appWhite, radius: 20)
                 .background(

@@ -19,7 +19,6 @@ struct HomePage: View {
                 
                 HomePageBody()
                     .navigationTitle("HapticTronomeTitle")
-                    .padding()
             }
         }
     }
