@@ -11,6 +11,7 @@ struct UnderCirclePotardWidget: View {
     
     @State var size: CGFloat
     @State var borderSize: CGFloat
+    @State var minimumBorderSize: CGFloat
     
     var body: some View {
         VStack {
@@ -23,7 +24,8 @@ struct UnderCirclePotardWidget: View {
                         startPoint: .top,
                         endPoint: .bottom
                     ),
-                    lineWidth: borderSize
+                    lineWidth: borderSize,
+                    minimumLineWidth: minimumBorderSize
                 )
         }
     }
@@ -31,6 +33,6 @@ struct UnderCirclePotardWidget: View {
 
 
 #Preview {
-    UnderCirclePotardWidget(size: 100, borderSize: 0.1)
+    UnderCirclePotardWidget(size: 100, borderSize: 0.1, minimumBorderSize: 1)
         .padding()
 }

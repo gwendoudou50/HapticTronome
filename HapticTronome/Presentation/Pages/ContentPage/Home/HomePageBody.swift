@@ -14,17 +14,18 @@ struct HomePageBody: View {
     var hapticViewModel = HapticViewModel()
     
     var body: some View {
-        VStack(alignment: .center, spacing: vstackSpacing) {
+        VStack(spacing: vstackSpacing) {
             Spacer()
             LedRow(metronomeViewModel: metronomeViewModel)
-                .padding()
             
             Spacer()
             
             TempoText(metronomeViewModel: metronomeViewModel)
             
             CirclePotardTempoWidget(metronomeViewModel: metronomeViewModel)
-                .frame(height: 300)
+                .frame(height: UIScreen.main.bounds.height * 0.4)
+                .padding()
+            
             
             ButtonWidget(metronomeViewModel: metronomeViewModel)
             Spacer()

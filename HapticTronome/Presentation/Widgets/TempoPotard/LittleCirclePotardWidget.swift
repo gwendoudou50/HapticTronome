@@ -15,7 +15,6 @@ struct LittleCirclePotardWidget: View {
         ZStack {
             Circle()
                 .fill(.appPrimary)
-                .frame(width: size, height: size)
                 .modifier(
                     InnerShadowModifier(
                         lineWidth: 4,
@@ -30,12 +29,15 @@ struct LittleCirclePotardWidget: View {
                         secondGradientEndPoint: .center
                     )
                 )
+                .frame(minWidth: 15, minHeight: 15)
+                .frame(idealWidth: size, idealHeight: size)
+                .frame(maxWidth: size, maxHeight: size)
         }
         
     }
 }
 
 #Preview {
-    LittleCirclePotardWidget(size: 100)
+    LittleCirclePotardWidget(size: 50)
         .padding()
 }

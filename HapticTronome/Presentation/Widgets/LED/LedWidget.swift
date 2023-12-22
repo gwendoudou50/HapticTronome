@@ -32,7 +32,6 @@ struct LedWidget: View {
                     secondGradientEndPoint: .center
                 )
             )
-            .frame(width: 40, height: 40)
     }
 }
 

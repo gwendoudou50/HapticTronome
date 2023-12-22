@@ -14,14 +14,14 @@ struct CirclePotardTempoWidget: View {
     
     var body: some View {
         GeometryReader { geometry in
-            let size: CGFloat = geometry.size.width * 0.6
+            let size: CGFloat = geometry.frame(in: .global).width * 0.6
             let underCircleSize: CGFloat = size
             let underCircleBorderSize: CGFloat = size * 0.07
             let upperCircleSize: CGFloat = underCircleSize - underCircleBorderSize
             let litterCircleSize: CGFloat = size * 0.1
             let littleCircleXOffset: CGFloat = (upperCircleSize / 3) * -1
             ZStack {
-                UnderCirclePotardWidget(size: size, borderSize: underCircleBorderSize)
+                UnderCirclePotardWidget(size: size, borderSize: underCircleBorderSize, minimumBorderSize: 15)
                     .frame(
                         width: underCircleSize,
                         height: underCircleSize
@@ -52,13 +52,10 @@ struct CirclePotardTempoWidget: View {
                          
                 )
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .alignmentGuide(HorizontalAlignment.center) { d in
-                d[HorizontalAlignment.center]
-            }
-            .alignmentGuide(VerticalAlignment.center) { d in
-                d[VerticalAlignment.center]
-            }
+            .position(
+                x: geometry.frame(in: .local).midX,
+                y: geometry.frame(in: .local).midY
+            )
         }
     }
 }
