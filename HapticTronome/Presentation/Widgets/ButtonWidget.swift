@@ -22,7 +22,7 @@ struct ButtonWidget: View {
         }) {
             Image(systemName: "play.fill")
         }
-        .buttonStyle(PlayButtonStyle(isPressed: metronomeViewModel.metronome.isPlaying))
+        .buttonStyle(RectangleButtonStyle(isPressed: metronomeViewModel.metronome.isPlaying))
     }
 }
 
