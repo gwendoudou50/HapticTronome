@@ -7,19 +7,43 @@
 
 import SwiftUI
 
+let coloredNavigationAppearance = UINavigationBarAppearance()
+
 struct HomePage: View {
+    
     init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color.appWhite)]
+        coloredNavigationAppearance.configureWithOpaqueBackground()
+        coloredNavigationAppearance.backgroundColor = .appBackground
+        coloredNavigationAppearance.titleTextAttributes = [.foregroundColor: UIColor.appWhite]
+        coloredNavigationAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.appWhite]
+        
+        UINavigationBar.appearance().standardAppearance = coloredNavigationAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredNavigationAppearance
     }
     
     var body: some View {
+        
         NavigationView {
-            ZStack (alignment: .center){
+            ZStack (alignment: .center) {
                 Color.appBackground.edgesIgnoringSafeArea(.all)
-                
-                HomePageBody()
-                    .navigationTitle("HapticTronomeTitle")
+                VStack {
+                    HStack (alignment: .center){
+                        Text("HapticTronome")
+                            .font(.largeTitle.bold())
+                            .foregroundStyle(Color.appWhite)
+                        Spacer()
+                        NavigationLink(destination: SettingsPage()) {
+                            SettingsWidgetButton()
+                        }
+                        
+                    }
+                    .padding()
+                    
+                    HomePageBody()
+                }
             }
+            .navigationBarTitleDisplayMode(.large)
+            .navigationBarHidden(true)
         }
     }
 }

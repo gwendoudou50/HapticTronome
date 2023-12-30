@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlayButtonStyle: ButtonStyle {
+struct RectangleButtonStyle: ButtonStyle {
     
     @ScaledMetric var horizontalPadding = UIScreen.main.bounds.width * 0.095
     @ScaledMetric var verticalPadding = UIScreen.main.bounds.width * 0.06
@@ -64,13 +64,12 @@ struct PlayButtonStyle: ButtonStyle {
     HStack {
         Button(action: {}) {
             Image(systemName: "play.fill")
-        }.buttonStyle(PlayButtonStyle(isPressed: false))
+        }.buttonStyle(RectangleButtonStyle(isPressed: false))
         
         Button(action: {}) {
             Image(systemName: "play.fill")
-        }.buttonStyle(PlayButtonStyle(isPressed: true))
+        }.buttonStyle(RectangleButtonStyle(isPressed: true))
     }
-    .buttonStyle(PlayButtonStyle())
     .previewLayout(.sizeThatFits)
     .padding()
 }

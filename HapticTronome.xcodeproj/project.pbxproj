@@ -29,12 +29,16 @@
 		84893E732AC9B17F002DF1CB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 84893E722AC9B17F002DF1CB /* Localizable.xcstrings */; };
 		84A2BABB2ADBEA6200A22EC6 /* LedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BABA2ADBEA6200A22EC6 /* LedWidget.swift */; };
 		84A2BABD2ADBED9D00A22EC6 /* LedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2BABC2ADBED9D00A22EC6 /* LedRow.swift */; };
+		84B6EA242B36FDEB001BDF0C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6EA232B36FDEB001BDF0C /* SettingsViewModel.swift */; };
+		84B6EA262B370034001BDF0C /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6EA252B370034001BDF0C /* SettingsModel.swift */; };
+		84B7E90A2B35A084005C3D32 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7E9092B35A084005C3D32 /* SettingsPage.swift */; };
 		84BEFF3D2AFAD98900C0064E /* PotentiometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */; };
 		84FAC5D42ADFC4F400F9C4B6 /* MetronomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */; };
+		84FCA2E52B407D9E0039A262 /* SettingsWidgetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCA2E42B407D9E0039A262 /* SettingsWidgetButton.swift */; };
 		96249BC32AD5D678009493BF /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96249BC22AD5D678009493BF /* constants.swift */; };
 		96877C182AD80D3C00D6529F /* Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96877C172AD80D3C00D6529F /* Glow.swift */; };
 		96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */; };
-		96C7E0F12AD569AD0069CFA8 /* PlayButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7E0F02AD569AD0069CFA8 /* PlayButtonStyle.swift */; };
+		96C7E0F12AD569AD0069CFA8 /* RectangleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7E0F02AD569AD0069CFA8 /* RectangleButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,12 +66,16 @@
 		84893E722AC9B17F002DF1CB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		84A2BABA2ADBEA6200A22EC6 /* LedWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedWidget.swift; sourceTree = "<group>"; };
 		84A2BABC2ADBED9D00A22EC6 /* LedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedRow.swift; sourceTree = "<group>"; };
+		84B6EA232B36FDEB001BDF0C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		84B6EA252B370034001BDF0C /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		84B7E9092B35A084005C3D32 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentiometerViewModel.swift; sourceTree = "<group>"; };
 		84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewModel.swift; sourceTree = "<group>"; };
+		84FCA2E42B407D9E0039A262 /* SettingsWidgetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWidgetButton.swift; sourceTree = "<group>"; };
 		96249BC22AD5D678009493BF /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		96877C172AD80D3C00D6529F /* Glow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glow.swift; sourceTree = "<group>"; };
 		96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWidget.swift; sourceTree = "<group>"; };
-		96C7E0F02AD569AD0069CFA8 /* PlayButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonStyle.swift; sourceTree = "<group>"; };
+		96C7E0F02AD569AD0069CFA8 /* RectangleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +190,7 @@
 			children = (
 				84710AB52AF2799300DEAA62 /* TimeSignature.swift */,
 				84710AB32AF278F600DEAA62 /* MetronomeModel.swift */,
+				84B6EA252B370034001BDF0C /* SettingsModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -200,6 +209,7 @@
 		84893E6D2AC9A476002DF1CB /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				84B7E9082B35A06F005C3D32 /* Settings */,
 				84893E6E2AC9A4E0002DF1CB /* ContentPage */,
 				84893E582AC99C8C002DF1CB /* HomePage.swift */,
 			);
@@ -231,22 +241,23 @@
 			path = LED;
 			sourceTree = "<group>";
 		};
+		84B7E9082B35A06F005C3D32 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				84B7E9092B35A084005C3D32 /* SettingsPage.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		84FAC5CF2ADFC40000F9C4B6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */,
 				84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */,
 				8448CF232B11E3F000BE0AF2 /* HapticViewModel.swift */,
+				84B6EA232B36FDEB001BDF0C /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		966E1D9B2AD67CE500821A24 /* PlayButtonStyles */ = {
-			isa = PBXGroup;
-			children = (
-				96C7E0F02AD569AD0069CFA8 /* PlayButtonStyle.swift */,
-			);
-			path = PlayButtonStyles;
 			sourceTree = "<group>";
 		};
 		96877C162AD80D2100D6529F /* Extensions */ = {
@@ -265,6 +276,7 @@
 				84A2BAB92ADBEA5000A22EC6 /* LED */,
 				96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */,
 				840D3CC22ADAD54400166FA6 /* TempoText.swift */,
+				84FCA2E42B407D9E0039A262 /* SettingsWidgetButton.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -272,7 +284,7 @@
 		96C7E0EF2AD5699F0069CFA8 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				966E1D9B2AD67CE500821A24 /* PlayButtonStyles */,
+				96C7E0F02AD569AD0069CFA8 /* RectangleButtonStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -305,7 +317,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					84893E522AC99C8C002DF1CB = {
 						CreatedOnToolsVersion = 15.0;
@@ -357,6 +369,8 @@
 				84893E592AC99C8C002DF1CB /* HomePage.swift in Sources */,
 				84710AB42AF278F600DEAA62 /* MetronomeModel.swift in Sources */,
 				8487B1A92AF437CF00BD2406 /* CirclePotardTempoWidget.swift in Sources */,
+				84B7E90A2B35A084005C3D32 /* SettingsPage.swift in Sources */,
+				84B6EA262B370034001BDF0C /* SettingsModel.swift in Sources */,
 				8448CF242B11E3F000BE0AF2 /* HapticViewModel.swift in Sources */,
 				84554DAF2B226737004A39A1 /* ShadowModifier.swift in Sources */,
 				8487B1AF2AF43E9400BD2406 /* UnderCirclePotardWidget.swift in Sources */,
@@ -367,13 +381,15 @@
 				96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */,
 				84893E712AC9A501002DF1CB /* HomePageBody.swift in Sources */,
 				84BEFF3D2AFAD98900C0064E /* PotentiometerViewModel.swift in Sources */,
-				96C7E0F12AD569AD0069CFA8 /* PlayButtonStyle.swift in Sources */,
+				96C7E0F12AD569AD0069CFA8 /* RectangleButtonStyle.swift in Sources */,
 				84893E572AC99C8C002DF1CB /* HapticTronomeApp.swift in Sources */,
 				96877C182AD80D3C00D6529F /* Glow.swift in Sources */,
 				84FAC5D42ADFC4F400F9C4B6 /* MetronomeViewModel.swift in Sources */,
 				840D3CC32ADAD54400166FA6 /* TempoText.swift in Sources */,
 				96249BC32AD5D678009493BF /* constants.swift in Sources */,
 				84710AB62AF2799300DEAA62 /* TimeSignature.swift in Sources */,
+				84FCA2E52B407D9E0039A262 /* SettingsWidgetButton.swift in Sources */,
+				84B6EA242B36FDEB001BDF0C /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +401,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -432,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -448,6 +465,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -489,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
