@@ -23,7 +23,14 @@ class MetronomeViewModel: ObservableObject {
     
     init() {
         let soundUrl = Bundle.main.url(forResource: metronome.soundFilePath, withExtension: metronome.soundFileExtension)!
-        self.audioPlayer = try! AVAudioPlayer(contentsOf: soundUrl)
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            self.audioPlayer = try! AVAudioPlayer(contentsOf: soundUrl)
+        } catch {
+            print("Failed to initialize player", error)
+        }
+        
     }
     
     // MARK: Private fucntions
@@ -46,26 +53,19 @@ class MetronomeViewModel: ObservableObject {
     
     func startMetronome() {
         playHapticFeedback()
-        
-        // MARK: Play audio if haptics are not activated
-        if (!self.metronome.haptic.isHapticActivated) {
-            self.audioPlayer.prepareToPlay()
-            self.audioPlayer.currentTime = 0
-            self.audioPlayer.play()
-        }
+        self.audioPlayer.prepareToPlay()
+        self.audioPlayer.currentTime = 0
+        self.audioPlayer.play()
         
         self.metronome.haptic.playHapticTick()
         self.metronome.isPlaying.toggle()
         
         timer = Timer.scheduledTimer(withTimeInterval: calculateTimeInterval(), repeats: true) { _ in
             
-            // MARK: Play audio if haptics are not activated
-            if (!self.metronome.haptic.isHapticActivated) {
-                self.audioPlayer.currentTime = 0
-                self.audioPlayer.play()
-            }
-            
+            self.audioPlayer.currentTime = 0
+            self.audioPlayer.play()
             self.metronome.haptic.playHapticTick()
+            
             if (self.metronome.timeSignature.numberOfNote > self.metronome.tempoTime) {
                 self.metronome.tempoTime += 1
             } else {
