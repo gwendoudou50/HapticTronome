@@ -26,7 +26,7 @@ extension MetronomeModel {
             soundFileExtension: "wav",
             isPlaying: false,
             tempoTime: 1,
-            haptic: HapticViewModel()
+            haptic: HapticViewModel.shared
         )
     }
 }
