@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		840D3CC32ADAD54400166FA6 /* TempoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CC22ADAD54400166FA6 /* TempoText.swift */; };
-		842E935A2B260646008B64CD /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 842E93592B260646008B64CD /* Click.wav */; };
 		843D31B02B08D78600D55886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843D31AF2B08D78600D55886 /* LaunchScreen.storyboard */; };
 		8448CF242B11E3F000BE0AF2 /* HapticViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448CF232B11E3F000BE0AF2 /* HapticViewModel.swift */; };
 		8448CF2A2B11E7DB00BE0AF2 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448CF292B11E7DB00BE0AF2 /* DeviceManager.swift */; };
@@ -35,6 +34,7 @@
 		84BEFF3D2AFAD98900C0064E /* PotentiometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */; };
 		84FAC5D42ADFC4F400F9C4B6 /* MetronomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */; };
 		84FCA2E52B407D9E0039A262 /* SettingsWidgetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCA2E42B407D9E0039A262 /* SettingsWidgetButton.swift */; };
+		84FCA2F12B4164E20039A262 /* AudioClick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84FCA2F02B4164E20039A262 /* AudioClick.wav */; };
 		96249BC32AD5D678009493BF /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96249BC22AD5D678009493BF /* constants.swift */; };
 		96877C182AD80D3C00D6529F /* Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96877C172AD80D3C00D6529F /* Glow.swift */; };
 		96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */; };
@@ -43,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		840D3CC22ADAD54400166FA6 /* TempoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoText.swift; sourceTree = "<group>"; };
-		842E93592B260646008B64CD /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Click.wav; sourceTree = "<group>"; };
 		843D31AE2B08D60100D55886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		843D31AF2B08D78600D55886 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8448CF232B11E3F000BE0AF2 /* HapticViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticViewModel.swift; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentiometerViewModel.swift; sourceTree = "<group>"; };
 		84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewModel.swift; sourceTree = "<group>"; };
 		84FCA2E42B407D9E0039A262 /* SettingsWidgetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWidgetButton.swift; sourceTree = "<group>"; };
+		84FCA2F02B4164E20039A262 /* AudioClick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AudioClick.wav; sourceTree = "<group>"; };
 		96249BC22AD5D678009493BF /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		96877C172AD80D3C00D6529F /* Glow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glow.swift; sourceTree = "<group>"; };
 		96C7E0ED2AD567EE0069CFA8 /* ButtonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWidget.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		840188332AF28295007CEF03 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				842E93592B260646008B64CD /* Click.wav */,
+				84FCA2F02B4164E20039A262 /* AudioClick.wav */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -350,8 +350,8 @@
 			files = (
 				84893E5E2AC99C8D002DF1CB /* Preview Assets.xcassets in Resources */,
 				8448CF2C2B11EAF200BE0AF2 /* HapticClick.ahap in Resources */,
+				84FCA2F12B4164E20039A262 /* AudioClick.wav in Resources */,
 				84893E5B2AC99C8D002DF1CB /* Assets.xcassets in Resources */,
-				842E935A2B260646008B64CD /* Click.wav in Resources */,
 				843D31B02B08D78600D55886 /* LaunchScreen.storyboard in Resources */,
 				84893E732AC9B17F002DF1CB /* Localizable.xcstrings in Resources */,
 			);

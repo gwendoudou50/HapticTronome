@@ -4,7 +4,7 @@
     {
         "Project" : "HapticTronome",
         "Created" : "25 November 2023",
-        "Description" : "A continuous event tweaked by sloped parameter curves, emphasized by a precisely placed transient event, creating the feeling of a spring or rubberband."
+        "Description" : "An impact vibration used to simulate a Click. There are a sound click audio files plays at the same time."
     },
     "Pattern":
     [
@@ -29,6 +29,18 @@
                 [
                     { "ParameterID": "HapticIntensity", "ParameterValue": 0.9 },
                     { "ParameterID": "HapticSharpness", "ParameterValue": 0.0 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time":0,
+                "EventType":"AudioCustom",
+                "EventWaveformPath":"AudioClick.wav",
+                "EventParameters":
+                [
+                    {"ParameterID":"AudioVolume","ParameterValue": 1.0}
                 ]
             }
         }
