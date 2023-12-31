@@ -22,7 +22,7 @@ extension MetronomeModel {
         return MetronomeModel(
             bpm: 120.0,
             timeSignature: TimeSignature.template,
-            soundFilePath: "Click",
+            soundFilePath: "AudioClick",
             soundFileExtension: "wav",
             isPlaying: false,
             tempoTime: 1,
