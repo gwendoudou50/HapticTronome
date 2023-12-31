@@ -9,15 +9,16 @@ import SwiftUI
 
 struct SettingsPage: View {
     
-    @State var isHapticVibrationActivated = false
-    @State var isSoundActivated = false
     @ObservedObject var settingsViewModel = SettingsViewModel()
+    @ObservedObject var hapticViewModel = HapticViewModel.shared
     
     var body: some View {
         Form {
-            Section() {
-                Toggle(isOn: $isHapticVibrationActivated) {
-                    Text("HapticVibrations")
+            if (DeviceManager.supportsHaptics) {
+                Section() {
+                    Toggle(isOn: $hapticViewModel.isHapticActivated) {
+                        Text("HapticVibrations")
+                    }
                 }
             }
             
@@ -30,7 +31,7 @@ struct SettingsPage: View {
                 
             }
         }
-        .padding(.top)
+        .padding(DeviceManager.supportsHaptics ? 16 : 0)
         .preferredColorScheme(.dark)
         .navigationBarTitle("Settings")
         

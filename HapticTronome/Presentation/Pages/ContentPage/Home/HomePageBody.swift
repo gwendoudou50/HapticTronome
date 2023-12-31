@@ -11,7 +11,6 @@ struct HomePageBody: View {
     
     @StateObject var metronomeViewModel: MetronomeViewModel = MetronomeViewModel()
     @ScaledMetric var vstackSpacing = 5
-    var hapticViewModel = HapticViewModel()
     
     var body: some View {
         VStack(spacing: vstackSpacing) {

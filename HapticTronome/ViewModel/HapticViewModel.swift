@@ -8,7 +8,11 @@
 import Foundation
 import CoreHaptics
 
-class HapticViewModel {
+class HapticViewModel: ObservableObject {
+    
+    static let shared = HapticViewModel()
+    
+    @Published var isHapticActivated: Bool = true
     var engine: CHHapticEngine!
     
     init() {
@@ -77,6 +81,11 @@ class HapticViewModel {
             print("This device doesn't supports haptics.")
             return
         }
+        
+        if (!self.isHapticActivated) {
+            return
+        }
+        
         // Express the path to the AHAP file before attempting to load it.
         guard let path = Bundle.main.path(forResource: fileName, ofType: "ahap") else {
             print("Can't load \(fileName)")

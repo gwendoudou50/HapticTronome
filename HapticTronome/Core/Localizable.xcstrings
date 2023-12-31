@@ -45,9 +45,6 @@
         }
       }
     },
-    "HapticTronome" : {
-
-    },
     "HapticTronomeTitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -71,13 +68,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Haptic vibrations"
+            "value" : "Vibrations"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vibrations haptic"
+            "state" : "needs_review",
+            "value" : "Vibrations"
           }
         }
       }

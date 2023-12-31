@@ -28,7 +28,7 @@ struct HomePage: View {
                 Color.appBackground.edgesIgnoringSafeArea(.all)
                 VStack {
                     HStack (alignment: .center){
-                        Text("HapticTronome")
+                        Text("HapticTronomeTitle")
                             .font(.largeTitle.bold())
                             .foregroundStyle(Color.appWhite)
                         Spacer()
