@@ -25,6 +25,7 @@ class MetronomeViewModel: ObservableObject {
         let soundUrl = Bundle.main.url(forResource: metronome.soundFilePath, withExtension: metronome.soundFileExtension)!
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
             self.audioPlayer = try! AVAudioPlayer(contentsOf: soundUrl)
         } catch {
             print("Failed to initialize player", error)
