@@ -11,14 +11,20 @@ struct SettingsPage: View {
     
     @ObservedObject var settingsViewModel = SettingsViewModel()
     @ObservedObject var hapticViewModel = HapticViewModel.shared
+    @ObservedObject var metronomeViewModel = MetronomeViewModel.shared
     
     var body: some View {
         Form {
-            if (DeviceManager.supportsHaptics) {
-                Section() {
+            
+            Section() {
+                if (DeviceManager.supportsHaptics) {
                     Toggle(isOn: $hapticViewModel.isHapticActivated) {
                         Text("HapticVibrations")
                     }
+                }
+                
+                Toggle(isOn: $metronomeViewModel.isAudioActivated) {
+                    Text("Sound")
                 }
             }
             
@@ -31,7 +37,7 @@ struct SettingsPage: View {
                 
             }
         }
-        .padding(DeviceManager.supportsHaptics ? 16 : 0)
+        .padding()
         .preferredColorScheme(.dark)
         .navigationBarTitle("Settings")
         

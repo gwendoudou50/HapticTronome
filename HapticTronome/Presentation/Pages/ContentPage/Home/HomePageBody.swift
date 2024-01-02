@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomePageBody: View {
     
-    @StateObject var metronomeViewModel: MetronomeViewModel = MetronomeViewModel()
+    @StateObject var metronomeViewModel: MetronomeViewModel = MetronomeViewModel.shared
     @ScaledMetric var vstackSpacing = 5
     
     var body: some View {

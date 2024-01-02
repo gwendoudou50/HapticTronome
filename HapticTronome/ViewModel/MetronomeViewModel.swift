@@ -12,8 +12,11 @@ import SwiftUI
 
 class MetronomeViewModel: ObservableObject {
     
+    static let shared = MetronomeViewModel()
+    
     @Published var metronome: MetronomeModel = MetronomeModel.template
     @Published var audioPlayer: AVAudioPlayer!
+    @Published var isAudioActivated: Bool = true
     
     private var timer: Timer?
     private var impactFeedbackGenerator = UIImpactFeedbackGenerator()
@@ -54,9 +57,7 @@ class MetronomeViewModel: ObservableObject {
     func startMetronome() {
         self.metronome.isPlaying.toggle()
         playHapticFeedback()
-        self.audioPlayer.prepareToPlay()
-        self.audioPlayer.currentTime = 0
-        self.audioPlayer.play()
+        playAudioClick()
         
         if (self.metronome.haptic.isHapticActivated) {
             self.metronome.haptic.playHapticTick()
@@ -64,8 +65,7 @@ class MetronomeViewModel: ObservableObject {
         
         timer = Timer.scheduledTimer(withTimeInterval: calculateTimeInterval(), repeats: true) { _ in
             
-            self.audioPlayer.currentTime = 0
-            self.audioPlayer.play()
+            self.playAudioClick()
             
             if (self.metronome.haptic.isHapticActivated) {
                 self.metronome.haptic.playHapticTick()
@@ -90,6 +90,14 @@ class MetronomeViewModel: ObservableObject {
     private func playHapticFeedback() {
         impactFeedbackGenerator.prepare()
         impactFeedbackGenerator.impactOccurred()
+    }
+    
+    private func playAudioClick() {
+        if (isAudioActivated) {
+            audioPlayer.prepareToPlay()
+            audioPlayer.currentTime = 0
+            audioPlayer.play()
+        }
     }
     
     

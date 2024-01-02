@@ -73,7 +73,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Vibrations"
           }
         }
@@ -92,6 +92,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paramètres"
+          }
+        }
+      }
+    },
+    "Sound" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son"
           }
         }
       }
