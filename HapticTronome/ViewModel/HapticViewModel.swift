@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreHaptics
+import UIKit
 
 class HapticViewModel: ObservableObject {
     
@@ -55,6 +56,7 @@ class HapticViewModel: ObservableObject {
             print("The engine stopped for reason: \(reason.rawValue)")
             switch reason {
             case .audioSessionInterrupt:
+                engine.stop()
                 print("Audio session interrupt")
             case .applicationSuspended:
                 print("Application suspended")
@@ -75,17 +77,22 @@ class HapticViewModel: ObservableObject {
     }
     
     func playHapticTick() {
-        let fileName = "HapticClick"
+        let state = UIApplication.shared.applicationState
+        let fileName = AppConstants().hapticFileName
         
         if (!DeviceManager.supportsHaptics) {
             print("This device doesn't supports haptics.")
             return
         }
         
-        if (!self.isHapticActivated) {
+        // Can't play haptic vibration in background mode
+        if (state == .background) {
+            engine.stop()
+            
             return
         }
         
+        // Play haptic vibration
         // Express the path to the AHAP file before attempting to load it.
         guard let path = Bundle.main.path(forResource: fileName, ofType: "ahap") else {
             print("Can't load \(fileName)")

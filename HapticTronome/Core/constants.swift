@@ -13,4 +13,6 @@ struct AppConstants {
     let underCirclePotardBorderGradient = Gradient(
         colors: [Color.black.opacity(0.1), Color.white.opacity(0.30)]
     )
+    
+    let hapticFileName = "HapticClick"
 }

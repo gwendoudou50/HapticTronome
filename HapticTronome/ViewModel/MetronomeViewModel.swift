@@ -52,19 +52,24 @@ class MetronomeViewModel: ObservableObject {
     }
     
     func startMetronome() {
+        self.metronome.isPlaying.toggle()
         playHapticFeedback()
         self.audioPlayer.prepareToPlay()
         self.audioPlayer.currentTime = 0
         self.audioPlayer.play()
         
-        self.metronome.haptic.playHapticTick()
-        self.metronome.isPlaying.toggle()
+        if (self.metronome.haptic.isHapticActivated) {
+            self.metronome.haptic.playHapticTick()
+        }
         
         timer = Timer.scheduledTimer(withTimeInterval: calculateTimeInterval(), repeats: true) { _ in
             
             self.audioPlayer.currentTime = 0
             self.audioPlayer.play()
-            self.metronome.haptic.playHapticTick()
+            
+            if (self.metronome.haptic.isHapticActivated) {
+                self.metronome.haptic.playHapticTick()
+            }
             
             if (self.metronome.timeSignature.numberOfNote > self.metronome.tempoTime) {
                 self.metronome.tempoTime += 1
