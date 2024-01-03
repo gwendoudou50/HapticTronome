@@ -26,6 +26,12 @@ struct HomePage: View {
         NavigationView {
             ZStack (alignment: .center) {
                 Color.appBackground.edgesIgnoringSafeArea(.all)
+                    .overlay(
+                        Image(.background)
+                            .resizable()
+                            .ignoresSafeArea(.all)
+                            .opacity(0.04)
+                    )
                 VStack {
                     HStack (alignment: .center){
                         Text("HapticTronomeTitle")
