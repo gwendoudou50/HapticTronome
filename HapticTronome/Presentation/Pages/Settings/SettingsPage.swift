@@ -37,7 +37,7 @@ struct SettingsPage: View {
                 
             }
         }
-        .padding()
+        .padding(.top)
         .preferredColorScheme(.dark)
         .navigationBarTitle("Settings")
         
