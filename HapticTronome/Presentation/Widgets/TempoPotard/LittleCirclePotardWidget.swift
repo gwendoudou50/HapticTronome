@@ -29,7 +29,7 @@ struct LittleCirclePotardWidget: View {
                         secondGradientEndPoint: .center
                     )
                 )
-                .frame(minWidth: 15, minHeight: 15)
+                .frame(minWidth: 18, minHeight: 18)
                 .frame(idealWidth: size, idealHeight: size)
                 .frame(maxWidth: size, maxHeight: size)
         }
