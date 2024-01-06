@@ -15,4 +15,6 @@ struct AppConstants {
     )
     
     let hapticFileName = "HapticClick"
+    let englishPrivacyPolicyUrl = "https://www.iubenda.com/privacy-policy/20234861"
+    let frenchPrivacyPolicyUrl = "https://www.iubenda.com/privacy-policy/49425687"
 }
