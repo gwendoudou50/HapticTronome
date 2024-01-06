@@ -17,18 +17,20 @@ struct SettingsPage: View {
         Form {
             
             Section() {
+                Toggle(isOn: $metronomeViewModel.isAudioActivated) {
+                    Text("Sound")
+                }
+                
                 if (DeviceManager.supportsHaptics) {
                     Toggle(isOn: $hapticViewModel.isHapticActivated) {
                         Text("HapticVibrations")
                     }
                 }
-                
-                Toggle(isOn: $metronomeViewModel.isAudioActivated) {
-                    Text("Sound")
-                }
             }
             
             Section(header: Text("About")) {
+                Link("PrivacyPolicy", destination: URL(string: settingsViewModel.getUrlPrivacyPolicy())!)
+                    .foregroundColor(.primary)
                 HStack {
                     Text("Version")
                     Spacer()
