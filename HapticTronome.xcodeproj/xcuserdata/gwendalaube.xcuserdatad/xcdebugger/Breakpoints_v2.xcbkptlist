@@ -216,7 +216,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DF3DD8AD-FBFE-488F-9B01-928E0CC05CF9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HapticTronome/Presentation/Widgets/TempoPotard/LittleCirclePotardWidget.swift"

@@ -17,7 +17,10 @@ struct SettingsWidgetButton: View {
             .foregroundColor(Color.appPrimary)
             .background(
                 ZStack {
+                    BackgroundCircleWidget()
                     Circle()
+                        .shadow(color: Color.appBlack.opacity(1), radius: 6, x: 0, y: 2)
+                        .shadow(color: Color.appWhite.opacity(0.2), radius: 4, x: 0, y: -1)
                         .foregroundStyle(.linearGradient(AppConstants().playButtonGradient, startPoint: .top, endPoint: .bottom))
                         .overlay(
                             Circle()
@@ -26,9 +29,11 @@ struct SettingsWidgetButton: View {
                                 .clipShape(Circle())
                         )
                 }
+                    
+                
             )
-            .shadow(color: Color.appBlack.opacity(0.24), radius: 8, x: 0, y: 6)
-            .shadow(color: Color.appWhite.opacity(0.14), radius: 1, x: 0, y: -1)
+            
+            
     }
 }
 

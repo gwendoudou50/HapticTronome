@@ -22,7 +22,10 @@ struct RectangleButtonStyle: ButtonStyle {
                 .foregroundColor(Color.appPrimary)
                 .background(
                     ZStack {
+                        BackgroundRoundedRectangleWidget(cornerRadius: 12)
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .shadow(color: Color.appBlack.opacity(1), radius: 6, x: 0, y: 2)
+                            .shadow(color: Color.appWhite.opacity(0.2), radius: 4, x: 0, y: -1)
                             .foregroundStyle(.linearGradient(AppConstants().playButtonGradient, startPoint: .top, endPoint: .bottom))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
@@ -32,8 +35,6 @@ struct RectangleButtonStyle: ButtonStyle {
                             )
                     }
                 )
-                .shadow(color: Color.appBlack.opacity(0.24), radius: 8, x: 0, y: 6)
-                .shadow(color: Color.appWhite.opacity(0.14), radius: 1, x: 0, y: -1)
         } else {
             configuration.label
                 .font(.body)
@@ -43,18 +44,19 @@ struct RectangleButtonStyle: ButtonStyle {
                 .glow(color: Color.appWhite, radius: 20)
                 .background(
                     ZStack {
+                        BackgroundRoundedRectangleWidget(cornerRadius: 12)
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
                             .fill(Color.appGrey)
+                            .shadow(color: Color.appBlack.opacity(1), radius: 6, x: 0, y: 2)
+                            .shadow(color: Color.appWhite.opacity(0.2), radius: 4, x: 0, y: -1)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
                                     .stroke(Color.appBlack, lineWidth: 4)
                                     .shadow(color: Color.appBlack.opacity(0.40), radius: 1, x: 0, y: -1)
                                     .clipShape(RoundedRectangle(cornerRadius: 12))
                             )
-                            .shadow(color: Color.appWhite.opacity(0.14), radius: 1, x: 0, y: -1)
                     }
                 )
-                
         }
         
     }

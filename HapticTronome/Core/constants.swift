@@ -10,7 +10,7 @@ import SwiftUI
 
 struct AppConstants {
     let playButtonGradient = Gradient(colors: [Color.appButtonGradientLight, Color.appButtonGradientDark])
-    let underCirclePotardBorderGradient = Gradient(
+    let underWidgetBorderGradient = Gradient(
         colors: [Color.black.opacity(0.1), Color.white.opacity(0.30)]
     )
     

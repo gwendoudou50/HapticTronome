@@ -21,7 +21,7 @@ struct CirclePotardTempoWidget: View {
             let litterCircleSize: CGFloat = size * 0.1
             let littleCircleXOffset: CGFloat = (upperCircleSize / 3) * -1
             ZStack {
-                UnderCirclePotardWidget(size: size, borderSize: underCircleBorderSize, minimumBorderSize: 15)
+                BackgroundCircleWidget()
                     .frame(
                         width: underCircleSize,
                         height: underCircleSize
