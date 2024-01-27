@@ -12,30 +12,21 @@ struct LedWidget: View {
     @State var isOn: Bool = false
     
     var body: some View {
-        let color: Color = isOn ? .appPrimary : .appWhite
+        let opacity: Double = isOn ? 1.0 : 0.2
         
         Circle()
-            .fill(color)
-            .modifier(
-                InnerShadowModifier(
-                    firstColor: .black,
-                    secondColor: .black,
-                    lineWidth: 8,
-                    radius: 4,
-                    firstX: 0,
-                    firstY: 4,
-                    secondX: -2,
-                    secondY: -2,
-                    firstGradientStartPoint: .bottom,
-                    firstGradientEndPoint: .center,
-                    secondGradientStartPoint: .top,
-                    secondGradientEndPoint: .center
-                )
-            )
+            .fill(.appPrimary)
+            .opacity(opacity)
+            .scaledToFill()
+            .frame(width: nil)
     }
 }
 
 #Preview {
-    LedWidget(isOn: false)
-        .padding(80)
+    VStack {
+        LedWidget(isOn: false)
+            .padding(80)
+        LedWidget(isOn: true)
+            .padding(80)
+    }
 }
