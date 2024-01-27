@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BackgroundCircleWidget: View {
+    
+    @State var borderSize: CGFloat = 10.0
+    
     var body: some View {
         Circle()
             .fill(.appUnderCirclePotard,
@@ -16,7 +19,7 @@ struct BackgroundCircleWidget: View {
                     startPoint: .top,
                     endPoint: .bottom
                   ),
-                  lineWidth: 10
+                  lineWidth: borderSize
             )
     }
 }
@@ -24,6 +27,7 @@ struct BackgroundCircleWidget: View {
 struct BackgroundRoundedRectangleWidget: View {
     
     @State var cornerRadius: CGFloat = 0.0
+    @State var borderSize: CGFloat = 10.0
     
     var body: some View {
         RoundedRectangle(cornerRadius: cornerRadius)
@@ -33,7 +37,7 @@ struct BackgroundRoundedRectangleWidget: View {
                     startPoint: .top,
                     endPoint: .bottom
                   ),
-                  lineWidth: 10
+                  lineWidth: borderSize
             )
     }
 }
