@@ -10,6 +10,7 @@ import SwiftUI
 struct HomePageBody: View {
     
     @StateObject var metronomeViewModel: MetronomeViewModel = MetronomeViewModel.shared
+    
     @ScaledMetric var vstackSpacing = 5
     @ScaledMetric var screenLedWidgetPadding = 28
     @ScaledMetric var cirlePotardTempoWidgetPadding = 16
