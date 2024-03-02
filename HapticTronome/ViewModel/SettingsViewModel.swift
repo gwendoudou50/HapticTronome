@@ -26,9 +26,9 @@ class SettingsViewModel: ObservableObject {
         let appLanguage = Locale.preferredLanguages[0]
         
         if (appLanguage == "fr-FR") {
-            return AppConstants().frenchPrivacyPolicyUrl
+            return AppConstants.frenchPrivacyPolicyUrl
         }
         
-        return AppConstants().englishPrivacyPolicyUrl
+        return AppConstants.englishPrivacyPolicyUrl
     }
 }

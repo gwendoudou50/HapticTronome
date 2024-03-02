@@ -78,7 +78,7 @@ class HapticViewModel: ObservableObject {
     
     func playHapticTick() {
         let state = UIApplication.shared.applicationState
-        let fileName = AppConstants().hapticFileName
+        let fileName = AppConstants.hapticFileName
         
         if (!DeviceManager.supportsHaptics) {
             print("This device doesn't supports haptics.")

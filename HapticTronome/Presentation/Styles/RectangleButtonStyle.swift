@@ -26,7 +26,7 @@ struct RectangleButtonStyle: ButtonStyle {
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
                             .shadow(color: Color.appBlack.opacity(1), radius: 6, x: 0, y: 2)
                             .shadow(color: Color.appWhite.opacity(0.2), radius: 4, x: 0, y: -1)
-                            .foregroundStyle(.linearGradient(AppConstants().playButtonGradient, startPoint: .top, endPoint: .bottom))
+                            .foregroundStyle(.linearGradient(AppConstants.playButtonGradient, startPoint: .top, endPoint: .bottom))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
                                     .stroke(Color.appBlack, lineWidth: 4)

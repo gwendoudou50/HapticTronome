@@ -15,7 +15,7 @@ struct BackgroundCircleWidget: View {
         Circle()
             .fill(.appUnderCirclePotard,
                   strokeBorder: LinearGradient(
-                    gradient: AppConstants().underWidgetBorderGradient,
+                    gradient: AppConstants.underWidgetBorderGradient,
                     startPoint: .top,
                     endPoint: .bottom
                   ),
@@ -33,7 +33,7 @@ struct BackgroundRoundedRectangleWidget: View {
         RoundedRectangle(cornerRadius: cornerRadius)
             .fill(.appUnderCirclePotard,
                   strokeBorder: LinearGradient(
-                    gradient: AppConstants().underWidgetBorderGradient,
+                    gradient: AppConstants.underWidgetBorderGradient,
                     startPoint: .top,
                     endPoint: .bottom
                   ),
