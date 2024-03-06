@@ -57,7 +57,6 @@ struct InnerShadowModifier: ViewModifier {
                                         )
                                     )
                             )
-                        
                     )
                     .overlay(
                         Circle()
@@ -82,7 +81,6 @@ struct InnerShadowModifier: ViewModifier {
                                         )
                                     )
                             )
-                        
                     )
             )
     }

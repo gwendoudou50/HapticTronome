@@ -8,9 +8,9 @@
 import Foundation
 
 class TimeSignatureViewModel: ObservableObject {
-    private var _fetchTimeSignatureUseCase: FetchTimeSignatureUseCase
+    private var fetchTimeSignatureUseCase: FetchTimeSignatureUseCase
     
-    init(_fetchTimeSignatureUseCase: FetchTimeSignatureUseCase) {
+    init(fetchTimeSignatureUseCase: FetchTimeSignatureUseCase) {
         self._fetchTimeSignatureUseCase = _fetchTimeSignatureUseCase
     }
     

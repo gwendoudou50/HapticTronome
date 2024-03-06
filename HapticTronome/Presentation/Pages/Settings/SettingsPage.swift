@@ -8,20 +8,18 @@
 import SwiftUI
 
 struct SettingsPage: View {
-    
     @ObservedObject var settingsViewModel = SettingsViewModel()
     @ObservedObject var hapticViewModel = HapticViewModel.shared
     @ObservedObject var metronomeViewModel = MetronomeViewModel.shared
     
     var body: some View {
         Form {
-            
-            Section() {
+            Section {
                 Toggle(isOn: $metronomeViewModel.isAudioActivated) {
                     Text("Sound")
                 }
                 
-                if (DeviceManager.supportsHaptics) {
+                if DeviceManager.supportsHaptics {
                     Toggle(isOn: $hapticViewModel.isHapticActivated) {
                         Text("HapticVibrations")
                     }
@@ -36,13 +34,11 @@ struct SettingsPage: View {
                     Spacer()
                     Text(settingsViewModel.settings.appVersion)
                 }
-                
             }
         }
         .padding(.top)
         .preferredColorScheme(.dark)
         .navigationBarTitle("Settings")
-        
     }
 }
 

@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct TempoText: View {
-    
     @ObservedObject var metronomeViewModel: MetronomeViewModel
-    
+
     var body: some View {
         Text("\(String(format: "%.0f", metronomeViewModel.metronome.bpm)) BPM")
             .foregroundColor(.appWhite.opacity(metronomeViewModel.metronome.isPlaying ? 1 : 0.15))
@@ -24,9 +23,8 @@ struct TempoText: View {
     }
 }
 
-
 #Preview {
-    return ZStack {
+    ZStack {
         Color.appBackground.edgesIgnoringSafeArea(.all)
         TempoText(metronomeViewModel: MetronomeViewModel())
     }

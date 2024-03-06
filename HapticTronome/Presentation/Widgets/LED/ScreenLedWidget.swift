@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct ScreenLedWidget: View {
-    
     @ObservedObject var metronomeViewModel: MetronomeViewModel
     @ScaledMetric var borderSize: CGFloat = 14
     
     var body: some View {
-        
         let screenWidth = UIScreen.main.bounds.width
         let widgetSize = screenWidth - 80
         let numberOfNote = metronomeViewModel.metronome.timeSignature.numberOfNote
@@ -23,7 +21,7 @@ struct ScreenLedWidget: View {
         
         LazyVGrid(columns: ledRows, alignment: .center, spacing: spacing) {
             ForEach(0 ..< numberOfNote, id: \.self) { led in
-                if ((metronomeViewModel.metronome.tempoTime-1 == led) && (metronomeViewModel.metronome.isPlaying)) {
+                if (metronomeViewModel.metronome.tempoTime - 1 == led) && (metronomeViewModel.metronome.isPlaying) {
                     LedWidget(isOn: true)
                 } else {
                     LedWidget(isOn: false)

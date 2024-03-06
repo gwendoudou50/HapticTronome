@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SettingsWidgetButton: View {
-    
     @ScaledMetric var padding = UIScreen.main.bounds.width * 0.05
     var body: some View {
         Image(systemName: "gearshape.fill")
@@ -29,11 +28,7 @@ struct SettingsWidgetButton: View {
                                 .clipShape(Circle())
                         )
                 }
-                    
-                
             )
-            
-            
     }
 }
 
