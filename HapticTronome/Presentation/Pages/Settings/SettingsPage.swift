@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SettingsPage: View {
-    @ObservedObject var settingsViewModel = SettingsViewModel()
+    
+    @StateObject var settingsViewModel = SettingsViewModel()
     @ObservedObject var hapticViewModel = HapticViewModel.shared
     @ObservedObject var metronomeViewModel = MetronomeViewModel.shared
     
