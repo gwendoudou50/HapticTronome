@@ -18,6 +18,36 @@
             endingLineNumber = "18"
             landmarkName = "startPlayer(track:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FC629067-45BB-486D-AD2A-81E39DB3C206 - 7291351d15dda9a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HapticTronome.AudioManager.startPlayer(track: Swift.String) -&gt; ()"
+                  moduleName = "HapticTronome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Domain/AudioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18">
+               </Location>
+               <Location
+                  uuid = "FC629067-45BB-486D-AD2A-81E39DB3C206 - 7291351d15dda9a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HapticTronome.AudioManager.startPlayer(track: Swift.String) -&gt; ()"
+                  moduleName = "HapticTronome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gwendalaube/HapticTronome/HapticTronome/Domain/AudioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -142,8 +172,8 @@
             filePath = "HapticTronome/ViewModel/MetronomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "startMetronome()"
             landmarkType = "7">
          </BreakpointContent>
@@ -176,8 +206,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
             endingLineNumber = "13"
-            landmarkName = "LittleCirclePotardWidget"
-            landmarkType = "14">
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

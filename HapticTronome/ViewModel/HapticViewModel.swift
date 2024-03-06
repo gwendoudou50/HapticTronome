@@ -5,12 +5,11 @@
 //  Created by Gwendal Aubé on 25/11/2023.
 //
 
-import Foundation
 import CoreHaptics
+import Foundation
 import UIKit
 
 class HapticViewModel: ObservableObject {
-    
     static let shared = HapticViewModel()
     
     @Published var isHapticActivated: Bool = true
@@ -24,7 +23,7 @@ class HapticViewModel: ObservableObject {
         // Create and configure a haptic engine.
         do {
             engine = try CHHapticEngine()
-        } catch let error {
+        } catch {
             print("Engine Creation Error: \(error)")
         }
         
@@ -35,7 +34,6 @@ class HapticViewModel: ObservableObject {
         
         // The reset handler provides an opportunity to restart the engine.
         engine.resetHandler = {
-            
             print("Reset Handler: Restarting the engine.")
             
             do {
@@ -44,7 +42,6 @@ class HapticViewModel: ObservableObject {
                         
                 // Register any custom resources you had registered, using registerAudioResource.
                 // Recreate all haptic pattern players you had created, using createPlayer.
-
 
             } catch {
                 fatalError("Failed to restart the engine: \(error)")
@@ -78,15 +75,15 @@ class HapticViewModel: ObservableObject {
     
     func playHapticTick() {
         let state = UIApplication.shared.applicationState
-        let fileName = AppConstants().hapticFileName
+        let fileName = AppConstants.hapticFileName
         
-        if (!DeviceManager.supportsHaptics) {
+        if !DeviceManager.supportsHaptics {
             print("This device doesn't supports haptics.")
             return
         }
         
         // Can't play haptic vibration in background mode
-        if (state == .background) {
+        if state == .background {
             engine.stop()
             
             return
@@ -106,11 +103,8 @@ class HapticViewModel: ObservableObject {
             // Tell the engine to play a pattern.
             try engine?.playPattern(from: URL(fileURLWithPath: path))
             
-        } catch let error {
+        } catch {
             print("An error occured playing \(fileName): \(error).")
         }
-        
-
     }
 }
-

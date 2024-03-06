@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 class PotentiometerViewModel: ObservableObject {
-    
     @Published var angle: Double = 0.0
     
     private var lastAngle: Double = 0.0
@@ -21,20 +20,19 @@ class PotentiometerViewModel: ObservableObject {
         let radians = atan2(vector.dy, vector.dx)
         let degrees = radians * 180 / .pi
         
-        self.angle = degrees + 180
+        angle = degrees + 180
         
-        
-        if (angle >= lastAngle + 5.0) {
+        if angle >= lastAngle + 5.0 {
             metronomeViewModel.incrementBpm()
-            self.lastAngle = angle
+            lastAngle = angle
             
             // Play haptic vibration
             feedbackGenerator.selectionChanged()
         }
         
-        if (angle <= lastAngle - 5.0) {
+        if angle <= lastAngle - 5.0 {
             metronomeViewModel.decrementBpm()
-            self.lastAngle = angle
+            lastAngle = angle
             
             // Play haptic vibration
             feedbackGenerator.selectionChanged()

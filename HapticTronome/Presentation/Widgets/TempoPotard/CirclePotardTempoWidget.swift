@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct CirclePotardTempoWidget: View {
-    
-    @StateObject var potentiometerViewModel: PotentiometerViewModel = PotentiometerViewModel()
+    @StateObject var potentiometerViewModel: PotentiometerViewModel = .init()
     @ObservedObject var metronomeViewModel: MetronomeViewModel
-    
+
     var body: some View {
         GeometryReader { geometry in
             let size: CGFloat = geometry.frame(in: .global).width * 0.6
@@ -39,17 +38,16 @@ struct CirclePotardTempoWidget: View {
                         )
                 }
                 .gesture(DragGesture(minimumDistance: 0)
-                    .onChanged({ value in
+                    .onChanged { value in
                         potentiometerViewModel
                             .onChangedTempo(value: value, metronomeViewModel: metronomeViewModel)
-                    })
-                        .onEnded({ _ in
-                            if (metronomeViewModel.metronome.isPlaying) {
-                                metronomeViewModel.stopTempo()
-                                metronomeViewModel.startMetronome()
-                            }
-                        })
-                         
+                    }
+                    .onEnded { _ in
+                        if metronomeViewModel.metronome.isPlaying {
+                            metronomeViewModel.stopTempo()
+                            metronomeViewModel.startMetronome()
+                        }
+                    }
                 )
             }
             .position(

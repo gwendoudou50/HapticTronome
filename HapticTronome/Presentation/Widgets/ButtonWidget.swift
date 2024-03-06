@@ -9,12 +9,11 @@ import Foundation
 import SwiftUI
 
 struct ButtonWidget: View {
-    
     @ObservedObject var metronomeViewModel: MetronomeViewModel
-    
+
     var body: some View {
         Button(action: {
-            if (metronomeViewModel.metronome.isPlaying) {
+            if metronomeViewModel.metronome.isPlaying {
                 metronomeViewModel.stopTempo()
             } else {
                 metronomeViewModel.startMetronome()

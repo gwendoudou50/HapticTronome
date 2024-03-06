@@ -10,7 +10,6 @@ import SwiftUI
 let coloredNavigationAppearance = UINavigationBarAppearance()
 
 struct HomePage: View {
-    
     init() {
         coloredNavigationAppearance.configureWithOpaqueBackground()
         coloredNavigationAppearance.backgroundColor = .appBackground
@@ -22,9 +21,8 @@ struct HomePage: View {
     }
     
     var body: some View {
-        
         NavigationView {
-            ZStack (alignment: .center) {
+            ZStack(alignment: .center) {
                 Color.appBackground.edgesIgnoringSafeArea(.all)
                     .overlay(
                         Image(.background)
@@ -33,7 +31,7 @@ struct HomePage: View {
                             .opacity(0.04)
                     )
                 VStack {
-                    HStack (alignment: .center){
+                    HStack(alignment: .center) {
                         Text("HapticTronomeTitle")
                             .font(.largeTitle.bold())
                             .foregroundStyle(Color.appWhite)
@@ -41,7 +39,6 @@ struct HomePage: View {
                         NavigationLink(destination: SettingsPage()) {
                             SettingsWidgetButton()
                         }
-                        
                     }
                     .padding()
                     

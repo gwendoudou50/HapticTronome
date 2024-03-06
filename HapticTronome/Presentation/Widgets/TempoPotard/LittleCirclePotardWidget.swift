@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct LittleCirclePotardWidget: View {
-    
     @State var size: CGFloat
-    
+
     var body: some View {
         ZStack {
             Circle()
@@ -33,7 +32,6 @@ struct LittleCirclePotardWidget: View {
                 .frame(idealWidth: size, idealHeight: size)
                 .frame(maxWidth: size, maxHeight: size)
         }
-        
     }
 }
 

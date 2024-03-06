@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct RectangleButtonStyle: ButtonStyle {
-    
     @ScaledMetric var horizontalPadding = UIScreen.main.bounds.width * 0.095
     @ScaledMetric var verticalPadding = UIScreen.main.bounds.width * 0.06
     var isPressed: Bool = false
-    
+
     func makeBody(configuration: Configuration) -> some View {
-        if (!isPressed) {
+        if !isPressed {
             configuration.label
                 .font(.body)
                 .padding(.horizontal, horizontalPadding)
@@ -26,7 +25,7 @@ struct RectangleButtonStyle: ButtonStyle {
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
                             .shadow(color: Color.appBlack.opacity(1), radius: 6, x: 0, y: 2)
                             .shadow(color: Color.appWhite.opacity(0.2), radius: 4, x: 0, y: -1)
-                            .foregroundStyle(.linearGradient(AppConstants().playButtonGradient, startPoint: .top, endPoint: .bottom))
+                            .foregroundStyle(.linearGradient(AppConstants.playButtonGradient, startPoint: .top, endPoint: .bottom))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
                                     .stroke(Color.appBlack, lineWidth: 4)
@@ -58,7 +57,6 @@ struct RectangleButtonStyle: ButtonStyle {
                     }
                 )
         }
-        
     }
 }
 
@@ -67,7 +65,7 @@ struct RectangleButtonStyle: ButtonStyle {
         Button(action: {}) {
             Image(systemName: "play.fill")
         }.buttonStyle(RectangleButtonStyle(isPressed: false))
-        
+
         Button(action: {}) {
             Image(systemName: "play.fill")
         }.buttonStyle(RectangleButtonStyle(isPressed: true))

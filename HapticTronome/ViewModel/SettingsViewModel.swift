@@ -8,7 +8,7 @@
 import Foundation
 
 class SettingsViewModel: ObservableObject {
-    @Published var settings: SettingsModel = SettingsModel.template
+    @Published var settings: SettingsModel = .template
     
     init() {
         settings.appVersion = getAppVersion()
@@ -25,10 +25,10 @@ class SettingsViewModel: ObservableObject {
     func getUrlPrivacyPolicy() -> String {
         let appLanguage = Locale.preferredLanguages[0]
         
-        if (appLanguage == "fr-FR") {
-            return AppConstants().frenchPrivacyPolicyUrl
+        if appLanguage == "fr-FR" {
+            return AppConstants.frenchPrivacyPolicyUrl
         }
         
-        return AppConstants().englishPrivacyPolicyUrl
+        return AppConstants.englishPrivacyPolicyUrl
     }
 }
