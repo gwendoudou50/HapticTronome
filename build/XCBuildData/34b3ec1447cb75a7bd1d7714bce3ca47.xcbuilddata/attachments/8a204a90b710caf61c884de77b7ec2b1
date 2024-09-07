@@ -1,0 +1,38 @@
+{
+  "" : {
+    "diagnostics" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/WatchHapticTronome Watch App-master.dia",
+    "emit-module-dependencies" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/WatchHapticTronome Watch App-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/WatchHapticTronome Watch App-master-emit-module.dia",
+    "swift-dependencies" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/WatchHapticTronome Watch App-master.swiftdeps"
+  },
+  "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/GeneratedAssetSymbols.bc",
+    "object" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/HapticTronomeApp.swift" : {
+    "const-values" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/HapticTronomeApp.swiftconstvalues",
+    "dependencies" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/HapticTronomeApp.d",
+    "diagnostics" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/HapticTronomeApp.dia",
+    "index-unit-output-path" : "/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/HapticTronomeApp.o",
+    "llvm-bc" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/HapticTronomeApp.bc",
+    "object" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/HapticTronomeApp.o",
+    "swift-dependencies" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/HapticTronomeApp.swiftdeps",
+    "swiftmodule" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/HapticTronomeApp~partial.swiftmodule"
+  },
+  "/Users/gwendalaube/Documents/HapticTronome/WatchHapticTronome Watch App/ContentView.swift" : {
+    "const-values" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/ContentView.d",
+    "diagnostics" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/ContentView.dia",
+    "index-unit-output-path" : "/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/ContentView.o",
+    "llvm-bc" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/ContentView.bc",
+    "object" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/ContentView.o",
+    "swift-dependencies" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/gwendalaube/Documents/HapticTronome/build/HapticTronome.build/Debug-watchos/WatchHapticTronome Watch App.build/Objects-normal/arm64_32/ContentView~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,27 @@
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Manager/DeviceManager.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Widgets/LED/ScreenLedWidget.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Pages/HomePage.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Data/MetronomeModel.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Widgets/TempoPotard/CirclePotardTempoWidget.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Pages/Settings/SettingsPage.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Data/SettingsModel.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/ViewModel/HapticViewModel.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Modifier/ShadowModifier.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Widgets/TempoPotard/UpperCirclePotardWidget.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Widgets/LED/LedWidget.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Widgets/BackgroundWidget.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Widgets/TempoPotard/LittleCirclePotardWidget.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Extensions/Shape.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Widgets/ButtonWidget.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Pages/ContentPage/Home/HomePageBody.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/ViewModel/PotentiometerViewModel.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Styles/RectangleButtonStyle.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/HapticTronomeApp.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Extensions/Glow.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/ViewModel/MetronomeViewModel.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Widgets/TempoText.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Core/Constants.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Data/TimeSignature.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/Presentation/Widgets/SettingsWidgetButton.swift
+/Users/gwendalaube/Documents/HapticTronome/HapticTronome/ViewModel/SettingsViewModel.swift
+/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Previews/iphonesimulator/HapticTronome\ -\ Dev/Intermediates.noindex/HapticTronome.build/Debug-iphonesimulator/HapticTronome.build/DerivedSources/GeneratedAssetSymbols.swift
