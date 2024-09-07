@@ -14,7 +14,7 @@
 		8448CF2C2B11EAF200BE0AF2 /* HapticClick.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 8448CF2B2B11EAF200BE0AF2 /* HapticClick.ahap */; };
 		84554DAF2B226737004A39A1 /* ShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84554DAE2B226737004A39A1 /* ShadowModifier.swift */; };
 		84710AB42AF278F600DEAA62 /* MetronomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB32AF278F600DEAA62 /* MetronomeModel.swift */; };
-		84710AB62AF2799300DEAA62 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB52AF2799300DEAA62 /* TimeSignature.swift */; };
+		84710AB62AF2799300DEAA62 /* TimeSignatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710AB52AF2799300DEAA62 /* TimeSignatureModel.swift */; };
 		847F8EC82B1E706100D0057E /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F8EC72B1E706100D0057E /* Shape.swift */; };
 		8487B1A92AF437CF00BD2406 /* CirclePotardTempoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */; };
 		8487B1AB2AF4380400BD2406 /* LittleCirclePotardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */; };
@@ -50,7 +50,7 @@
 		8448CF2B2B11EAF200BE0AF2 /* HapticClick.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HapticClick.ahap; sourceTree = "<group>"; };
 		84554DAE2B226737004A39A1 /* ShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowModifier.swift; sourceTree = "<group>"; };
 		84710AB32AF278F600DEAA62 /* MetronomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeModel.swift; sourceTree = "<group>"; };
-		84710AB52AF2799300DEAA62 /* TimeSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
+		84710AB52AF2799300DEAA62 /* TimeSignatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignatureModel.swift; sourceTree = "<group>"; };
 		847F8EC72B1E706100D0057E /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		8487B1A82AF437CF00BD2406 /* CirclePotardTempoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePotardTempoWidget.swift; sourceTree = "<group>"; };
 		8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleCirclePotardWidget.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		84893E652AC99E58002DF1CB /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				84710AB52AF2799300DEAA62 /* TimeSignature.swift */,
+				84710AB52AF2799300DEAA62 /* TimeSignatureModel.swift */,
 				84710AB32AF278F600DEAA62 /* MetronomeModel.swift */,
 				84B6EA252B370034001BDF0C /* SettingsModel.swift */,
 			);
@@ -387,7 +387,7 @@
 				84FAC5D42ADFC4F400F9C4B6 /* MetronomeViewModel.swift in Sources */,
 				840D3CC32ADAD54400166FA6 /* TempoText.swift in Sources */,
 				96249BC32AD5D678009493BF /* Constants.swift in Sources */,
-				84710AB62AF2799300DEAA62 /* TimeSignature.swift in Sources */,
+				84710AB62AF2799300DEAA62 /* TimeSignatureModel.swift in Sources */,
 				84FCA2E52B407D9E0039A262 /* SettingsWidgetButton.swift in Sources */,
 				84B6EA242B36FDEB001BDF0C /* SettingsViewModel.swift in Sources */,
 			);
