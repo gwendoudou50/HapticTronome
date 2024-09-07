@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'HapticTronome' in project 'HapticTronome'
+➜ Explicit dependency on target 'WatchHapticTronome Watch App' in project 'HapticTronome'
+Target 'WatchHapticTronome Watch App' in project 'HapticTronome' (no dependencies)

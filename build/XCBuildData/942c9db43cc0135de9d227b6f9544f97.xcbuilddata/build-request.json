@@ -1,0 +1,153 @@
+{
+  "buildCommand" : {
+    "command" : "preview",
+    "style" : "dynamicReplacement"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "04db2c69027b85f33f64dea9d2645924d6e2a6e81b0b4260b84b075b061eaa0d",
+      "parameters" : {
+        "action" : "build",
+        "activeArchitecture" : "arm64",
+        "activeRunDestination" : {
+          "disableOnlyActiveArch" : false,
+          "platform" : "iphonesimulator",
+          "sdk" : "iphonesimulator17.5",
+          "sdkVariant" : "iphonesimulator",
+          "supportedArchitectures" : [
+            "arm64",
+            "x86_64"
+          ],
+          "targetArchitecture" : "arm64"
+        },
+        "arenaInfo" : {
+          "buildIntermediatesPath" : "",
+          "buildProductsPath" : "",
+          "derivedDataPath" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData",
+          "indexDataStoreFolderPath" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Index.noindex/DataStore",
+          "indexEnableDataStore" : true,
+          "indexPCHPath" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Index.noindex/PrecompiledHeaders",
+          "pchPath" : ""
+        },
+        "configurationName" : "Debug",
+        "overrides" : {
+          "synthesized" : {
+            "table" : {
+              "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "",
+              "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "",
+              "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone16,1",
+              "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+              "DSTROOT" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Previews/iphonesimulator/HapticTronome - Dev/ReleaseProducts",
+              "ENABLE_ONLY_ACTIVE_RESOURCES" : "NO",
+              "ENABLE_PREVIEWS" : "YES",
+              "OBJROOT" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Previews/iphonesimulator/HapticTronome - Dev/Intermediates.noindex",
+              "SYMROOT" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Previews/iphonesimulator/HapticTronome - Dev/Products",
+              "TARGET_DEVICE_IDENTIFIER" : "072A9775-F2B2-427F-A9F6-9398C60B4DBF",
+              "TARGET_DEVICE_MODEL" : "iPhone16,1",
+              "TARGET_DEVICE_OS_VERSION" : "17.5",
+              "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+            }
+          }
+        }
+      }
+    },
+    {
+      "guid" : "04db2c69027b85f33f64dea9d264592477ee6b776f4cab8a80f122d9b280aa6f",
+      "parameters" : {
+        "action" : "build",
+        "activeArchitecture" : "arm64",
+        "activeRunDestination" : {
+          "disableOnlyActiveArch" : false,
+          "platform" : "iphonesimulator",
+          "sdk" : "iphonesimulator17.5",
+          "sdkVariant" : "iphonesimulator",
+          "supportedArchitectures" : [
+            "arm64",
+            "x86_64"
+          ],
+          "targetArchitecture" : "arm64"
+        },
+        "arenaInfo" : {
+          "buildIntermediatesPath" : "",
+          "buildProductsPath" : "",
+          "derivedDataPath" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData",
+          "indexDataStoreFolderPath" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Index.noindex/DataStore",
+          "indexEnableDataStore" : true,
+          "indexPCHPath" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Index.noindex/PrecompiledHeaders",
+          "pchPath" : ""
+        },
+        "configurationName" : "Debug",
+        "overrides" : {
+          "synthesized" : {
+            "table" : {
+              "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "",
+              "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "",
+              "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone16,1",
+              "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+              "DSTROOT" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Previews/iphonesimulator/HapticTronome - Dev/ReleaseProducts",
+              "ENABLE_ONLY_ACTIVE_RESOURCES" : "NO",
+              "ENABLE_PREVIEWS" : "YES",
+              "OBJROOT" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Previews/iphonesimulator/HapticTronome - Dev/Intermediates.noindex",
+              "SYMROOT" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Previews/iphonesimulator/HapticTronome - Dev/Products",
+              "TARGET_DEVICE_IDENTIFIER" : "072A9775-F2B2-427F-A9F6-9398C60B4DBF",
+              "TARGET_DEVICE_MODEL" : "iPhone16,1",
+              "TARGET_DEVICE_OS_VERSION" : "17.5",
+              "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "containerPath" : "/Users/gwendalaube/Documents/HapticTronome/HapticTronome.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.5",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/gwendalaube/Library/Developer/Xcode/DerivedData/HapticTronome-ckhuuiuukfctjkatojmyutijmwas/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone16,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.5",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone16,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "072A9775-F2B2-427F-A9F6-9398C60B4DBF",
+          "TARGET_DEVICE_MODEL" : "iPhone16,1",
+          "TARGET_DEVICE_OS_VERSION" : "17.5",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

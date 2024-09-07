@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		840D3CC32ADAD54400166FA6 /* TempoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D3CC22ADAD54400166FA6 /* TempoText.swift */; };
 		843D31B02B08D78600D55886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843D31AF2B08D78600D55886 /* LaunchScreen.storyboard */; };
+		844382622C8C4D8A00F29372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844382612C8C4D8A00F29372 /* ContentView.swift */; };
+		844382632C8C51A100F29372 /* HapticTronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */; };
 		8448CF242B11E3F000BE0AF2 /* HapticViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448CF232B11E3F000BE0AF2 /* HapticViewModel.swift */; };
 		8448CF2A2B11E7DB00BE0AF2 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448CF292B11E7DB00BE0AF2 /* DeviceManager.swift */; };
 		8448CF2C2B11EAF200BE0AF2 /* HapticClick.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 8448CF2B2B11EAF200BE0AF2 /* HapticClick.ahap */; };
@@ -32,6 +34,11 @@
 		84B7E90A2B35A084005C3D32 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7E9092B35A084005C3D32 /* SettingsPage.swift */; };
 		84BEFF3D2AFAD98900C0064E /* PotentiometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */; };
 		84C2B90F2B53DA1700166BBC /* BackgroundWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2B90E2B53DA1700166BBC /* BackgroundWidget.swift */; };
+		84C972D12C8BAD2700771D5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C972D02C8BAD2700771D5A /* ContentView.swift */; };
+		84C972D32C8BAD2900771D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C972D22C8BAD2900771D5A /* Assets.xcassets */; };
+		84C972D62C8BAD2900771D5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C972D52C8BAD2900771D5A /* Preview Assets.xcassets */; };
+		84C972D92C8BAD2900771D5A /* WatchHapticTronome Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 84C972CC2C8BAD2700771D5A /* WatchHapticTronome Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84C972DF2C8BAF1400771D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84893E5A2AC99C8D002DF1CB /* Assets.xcassets */; };
 		84FAC5D42ADFC4F400F9C4B6 /* MetronomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */; };
 		84FCA2E52B407D9E0039A262 /* SettingsWidgetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCA2E42B407D9E0039A262 /* SettingsWidgetButton.swift */; };
 		84FCA2F12B4164E20039A262 /* AudioClick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84FCA2F02B4164E20039A262 /* AudioClick.wav */; };
@@ -41,10 +48,35 @@
 		96C7E0F12AD569AD0069CFA8 /* RectangleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7E0F02AD569AD0069CFA8 /* RectangleButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		84C972D72C8BAD2900771D5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84893E4B2AC99C8C002DF1CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C972CB2C8BAD2700771D5A;
+			remoteInfo = "WatchHapticTronome Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84C972DA2C8BAD2900771D5A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				84C972D92C8BAD2900771D5A /* WatchHapticTronome Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		840D3CC22ADAD54400166FA6 /* TempoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoText.swift; sourceTree = "<group>"; };
 		843D31AE2B08D60100D55886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		843D31AF2B08D78600D55886 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		844382612C8C4D8A00F29372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8448CF232B11E3F000BE0AF2 /* HapticViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticViewModel.swift; sourceTree = "<group>"; };
 		8448CF292B11E7DB00BE0AF2 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
 		8448CF2B2B11EAF200BE0AF2 /* HapticClick.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HapticClick.ahap; sourceTree = "<group>"; };
@@ -56,7 +88,7 @@
 		8487B1AA2AF4380400BD2406 /* LittleCirclePotardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleCirclePotardWidget.swift; sourceTree = "<group>"; };
 		8487B1AC2AF43A0400BD2406 /* UpperCirclePotardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperCirclePotardWidget.swift; sourceTree = "<group>"; };
 		84893E532AC99C8C002DF1CB /* HapticTronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticTronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTronomeApp.swift; sourceTree = "<group>"; };
+		84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HapticTronomeApp.swift; path = Presentation/HapticTronomeApp.swift; sourceTree = "<group>"; };
 		84893E582AC99C8C002DF1CB /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		84893E5A2AC99C8D002DF1CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84893E5D2AC99C8D002DF1CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -69,6 +101,10 @@
 		84B7E9092B35A084005C3D32 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		84BEFF3C2AFAD98900C0064E /* PotentiometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentiometerViewModel.swift; sourceTree = "<group>"; };
 		84C2B90E2B53DA1700166BBC /* BackgroundWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundWidget.swift; sourceTree = "<group>"; };
+		84C972CC2C8BAD2700771D5A /* WatchHapticTronome Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchHapticTronome Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C972D02C8BAD2700771D5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84C972D22C8BAD2900771D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C972D52C8BAD2900771D5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84FAC5D32ADFC4F400F9C4B6 /* MetronomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewModel.swift; sourceTree = "<group>"; };
 		84FCA2E42B407D9E0039A262 /* SettingsWidgetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWidgetButton.swift; sourceTree = "<group>"; };
 		84FCA2F02B4164E20039A262 /* AudioClick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AudioClick.wav; sourceTree = "<group>"; };
@@ -80,6 +116,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		84893E502AC99C8C002DF1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C972C92C8BAD2700771D5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				84893E552AC99C8C002DF1CB /* HapticTronome */,
+				84C972CD2C8BAD2700771D5A /* WatchHapticTronome Watch App */,
 				84893E542AC99C8C002DF1CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				84893E532AC99C8C002DF1CB /* HapticTronome.app */,
+				84C972CC2C8BAD2700771D5A /* WatchHapticTronome Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				843D31AE2B08D60100D55886 /* Info.plist */,
+				84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */,
 				84893E672AC99E7D002DF1CB /* Core */,
 				8448CF282B11E7C100BE0AF2 /* Manager */,
 				84893E652AC99E58002DF1CB /* Data */,
@@ -174,7 +220,7 @@
 		84893E642AC99E4F002DF1CB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				84893E562AC99C8C002DF1CB /* HapticTronomeApp.swift */,
+				844382612C8C4D8A00F29372 /* ContentView.swift */,
 				84554DAD2B226721004A39A1 /* Modifier */,
 				96877C162AD80D2100D6529F /* Extensions */,
 				96C7E0EF2AD5699F0069CFA8 /* Styles */,
@@ -248,6 +294,24 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		84C972CD2C8BAD2700771D5A /* WatchHapticTronome Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				84C972D02C8BAD2700771D5A /* ContentView.swift */,
+				84C972D22C8BAD2900771D5A /* Assets.xcassets */,
+				84C972D42C8BAD2900771D5A /* Preview Content */,
+			);
+			path = "WatchHapticTronome Watch App";
+			sourceTree = "<group>";
+		};
+		84C972D42C8BAD2900771D5A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84C972D52C8BAD2900771D5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		84FAC5CF2ADFC40000F9C4B6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,14 +363,33 @@
 				84893E4F2AC99C8C002DF1CB /* Sources */,
 				84893E502AC99C8C002DF1CB /* Frameworks */,
 				84893E512AC99C8C002DF1CB /* Resources */,
+				84C972DA2C8BAD2900771D5A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84C972D82C8BAD2900771D5A /* PBXTargetDependency */,
+			);
+			name = HapticTronome;
+			productName = HapticTronome;
+			productReference = 84893E532AC99C8C002DF1CB /* HapticTronome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84C972CB2C8BAD2700771D5A /* WatchHapticTronome Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C972DD2C8BAD2900771D5A /* Build configuration list for PBXNativeTarget "WatchHapticTronome Watch App" */;
+			buildPhases = (
+				84C972C82C8BAD2700771D5A /* Sources */,
+				84C972C92C8BAD2700771D5A /* Frameworks */,
+				84C972CA2C8BAD2700771D5A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HapticTronome;
-			productName = HapticTronome;
-			productReference = 84893E532AC99C8C002DF1CB /* HapticTronome.app */;
+			name = "WatchHapticTronome Watch App";
+			productName = "WatchHapticTronome Watch App";
+			productReference = 84C972CC2C8BAD2700771D5A /* WatchHapticTronome Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -316,11 +399,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					84893E522AC99C8C002DF1CB = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					84C972CB2C8BAD2700771D5A = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
@@ -339,6 +425,7 @@
 			projectRoot = "";
 			targets = (
 				84893E522AC99C8C002DF1CB /* HapticTronome */,
+				84C972CB2C8BAD2700771D5A /* WatchHapticTronome Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -354,6 +441,16 @@
 				84893E5B2AC99C8D002DF1CB /* Assets.xcassets in Resources */,
 				843D31B02B08D78600D55886 /* LaunchScreen.storyboard in Resources */,
 				84893E732AC9B17F002DF1CB /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C972CA2C8BAD2700771D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C972D62C8BAD2900771D5A /* Preview Assets.xcassets in Resources */,
+				84C972DF2C8BAF1400771D5A /* Assets.xcassets in Resources */,
+				84C972D32C8BAD2900771D5A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +475,7 @@
 				84C2B90F2B53DA1700166BBC /* BackgroundWidget.swift in Sources */,
 				8487B1AB2AF4380400BD2406 /* LittleCirclePotardWidget.swift in Sources */,
 				847F8EC82B1E706100D0057E /* Shape.swift in Sources */,
+				844382622C8C4D8A00F29372 /* ContentView.swift in Sources */,
 				96C7E0EE2AD567EE0069CFA8 /* ButtonWidget.swift in Sources */,
 				84893E712AC9A501002DF1CB /* HomePageBody.swift in Sources */,
 				84BEFF3D2AFAD98900C0064E /* PotentiometerViewModel.swift in Sources */,
@@ -393,7 +491,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84C972C82C8BAD2700771D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C972D12C8BAD2700771D5A /* ContentView.swift in Sources */,
+				844382632C8C51A100F29372 /* HapticTronomeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84C972D82C8BAD2900771D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C972CB2C8BAD2700771D5A /* WatchHapticTronome Watch App */;
+			targetProxy = 84C972D72C8BAD2900771D5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		84893E5F2AC99C8D002DF1CB /* Debug */ = {
@@ -520,6 +635,7 @@
 		84893E622AC99C8D002DF1CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +673,7 @@
 		84893E632AC99C8D002DF1CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +708,68 @@
 			};
 			name = Release;
 		};
+		84C972DB2C8BAD2900771D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchHapticTronome Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 748Z57AM2S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchHapticTronome;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.gaube.HapticTronome;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaube.HapticTronome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		84C972DC2C8BAD2900771D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchHapticTronome Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 748Z57AM2S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchHapticTronome;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.gaube.HapticTronome;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaube.HapticTronome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -608,6 +787,15 @@
 			buildConfigurations = (
 				84893E622AC99C8D002DF1CB /* Debug */,
 				84893E632AC99C8D002DF1CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C972DD2C8BAD2900771D5A /* Build configuration list for PBXNativeTarget "WatchHapticTronome Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C972DB2C8BAD2900771D5A /* Debug */,
+				84C972DC2C8BAD2900771D5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
